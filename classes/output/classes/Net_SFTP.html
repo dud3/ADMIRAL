@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Net_SFTP
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="../js/template.js" type="text/javascript"></script>
+    <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span> </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                                                </ul>
+                    </li>
+                    <li class="dropdown" id="charts-menu">
+                        <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graph_class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../errors.html"><i class="icon-list-alt"></i>&#160;Errors</a></li>
+                            <li><a href="../markers.html"><i class="icon-list-alt"></i>&#160;Markers</a></li>
+                            <li><a href="../deprecated.html"><i class="icon-list-alt"></i>&#160;Deprecated</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="go_to_top">
+        <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+    </div>
+</div>
+
+<div id="___" class="container">
+    <noscript>
+        <div class="alert alert-warning">
+            Javascript is disabled; several features are only available if Javascript is enabled.
+        </div>
+    </noscript>
+
+        
+    <div class="row">
+        <div class="span4">
+            <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-custom icon-method"></i> Methods
+                    <ul>
+                                                                                <li class="method public">
+                                <a href="#method_Net_SFTP" title="Net_SFTP :: Default Constructor.">
+                                    <span class="description">Default Constructor.</span><pre>Net_SFTP</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_login" title="login :: Login">
+                                    <span class="description">Login</span><pre>login</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_pwd" title="pwd :: Returns the current directory name">
+                                    <span class="description">Returns the current directory name</span><pre>pwd</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__logError" title="_logError :: Logs errors">
+                                    <span class="description">Logs errors</span><pre>_logError</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__realpath" title="_realpath :: Canonicalize the Server-Side Path Name">
+                                    <span class="description">Canonicalize the Server-Side Path Name</span><pre>_realpath</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_chdir" title="chdir :: Changes the current directory">
+                                    <span class="description">Changes the current directory</span><pre>chdir</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_nlist" title="nlist :: Returns a list of files in the given directory">
+                                    <span class="description">Returns a list of files in the given directory</span><pre>nlist</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_rawlist" title="rawlist :: Returns a detailed list of files in the given directory">
+                                    <span class="description">Returns a detailed list of files in the given directory</span><pre>rawlist</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__list" title="_list :: Reads a list, be it detailed or not, of files in the given directory">
+                                    <span class="description">Reads a list, be it detailed or not, of files in the given directory</span><pre>_list</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_size" title="size :: Returns the file size, in bytes, or false, on failure">
+                                    <span class="description">Returns the file size, in bytes, or false, on failure</span><pre>size</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__save_dir" title="_save_dir :: Save directories to cache">
+                                    <span class="description">Save directories to cache</span><pre>_save_dir</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__remove_dir" title="_remove_dir :: Remove directories from cache">
+                                    <span class="description">Remove directories from cache</span><pre>_remove_dir</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__is_dir" title="_is_dir :: Checks cache for directory">
+                                    <span class="description">Checks cache for directory</span><pre>_is_dir</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_stat" title="stat :: Returns general information about a file.">
+                                    <span class="description">Returns general information about a file.</span><pre>stat</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_lstat" title="lstat :: Returns general information about a file or symbolic link.">
+                                    <span class="description">Returns general information about a file or symbolic link.</span><pre>lstat</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__stat" title="_stat :: Returns general information about a file or symbolic link">
+                                    <span class="description">Returns general information about a file or symbolic link</span><pre>_stat</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__identify_type" title="_identify_type :: Attempt to identify the file type">
+                                    <span class="description">Attempt to identify the file type</span><pre>_identify_type</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__size" title="_size :: Returns the file size, in bytes, or false, on failure">
+                                    <span class="description">Returns the file size, in bytes, or false, on failure</span><pre>_size</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_chmod" title="chmod :: Set permissions on a file.">
+                                    <span class="description">Set permissions on a file.</span><pre>chmod</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__chmod_recursive" title="_chmod_recursive :: Recursively chmods directories on the SFTP server">
+                                    <span class="description">Recursively chmods directories on the SFTP server</span><pre>_chmod_recursive</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_mkdir" title="mkdir :: Creates a directory.">
+                                    <span class="description">Creates a directory.</span><pre>mkdir</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__mkdir_helper" title="_mkdir_helper :: Helper function for directory creation">
+                                    <span class="description">Helper function for directory creation</span><pre>_mkdir_helper</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_rmdir" title="rmdir :: Removes a directory.">
+                                    <span class="description">Removes a directory.</span><pre>rmdir</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__read_put_responses" title="_read_put_responses :: Reads multiple successive SSH_FXP_WRITE responses">
+                                    <span class="description">Reads multiple successive SSH_FXP_WRITE responses</span><pre>_read_put_responses</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_get" title="get :: Downloads a file from the SFTP server.">
+                                    <span class="description">Downloads a file from the SFTP server.</span><pre>get</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_delete" title="delete :: Deletes a file on the SFTP server.">
+                                    <span class="description">Deletes a file on the SFTP server.</span><pre>delete</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__delete_recursive" title="_delete_recursive :: Recursively deletes directories on the SFTP server">
+                                    <span class="description">Recursively deletes directories on the SFTP server</span><pre>_delete_recursive</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_rename" title="rename :: Renames a file or a directory on the SFTP server">
+                                    <span class="description">Renames a file or a directory on the SFTP server</span><pre>rename</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__parseAttributes" title="_parseAttributes :: Parse Attributes">
+                                    <span class="description">Parse Attributes</span><pre>_parseAttributes</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__parseLongname" title="_parseLongname :: Parse Longname">
+                                    <span class="description">Parse Longname</span><pre>_parseLongname</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__send_sftp_packet" title="_send_sftp_packet :: Sends SFTP Packets">
+                                    <span class="description">Sends SFTP Packets</span><pre>_send_sftp_packet</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__get_sftp_packet" title="_get_sftp_packet :: Receives SFTP Packets">
+                                    <span class="description">Receives SFTP Packets</span><pre>_get_sftp_packet</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getSFTPLog" title="getSFTPLog :: Returns a log of the packets that have been sent and received.">
+                                    <span class="description">Returns a log of the packets that have been sent and received.</span><pre>getSFTPLog</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getSFTPErrors" title="getSFTPErrors :: Returns all errors">
+                                    <span class="description">Returns all errors</span><pre>getSFTPErrors</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getLastSFTPError" title="getLastSFTPError :: Returns the last error">
+                                    <span class="description">Returns the last error</span><pre>getLastSFTPError</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getSupportedVersions" title="getSupportedVersions :: Get supported SFTP versions">
+                                    <span class="description">Get supported SFTP versions</span><pre>getSupportedVersions</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__disconnect" title="_disconnect :: Disconnect">
+                                    <span class="description">Disconnect</span><pre>_disconnect</pre>
+                                </a>
+                            </li>
+                                                                        </ul>
+                </li>
+                <li class="nav-header protected">» Protected
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                </li>
+                <li class="nav-header private">» Private
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                </li>
+                <li class="nav-header">
+                    <i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+                                            </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Net_SFTP</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/Net_SSH2.html">\Net_SSH2</a>
+                                                        </small>
+                <p class="short_description">Pure-PHP implementations of SFTP.</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>Jim Wigginton &lt;terrafrost@php.net&gt;</td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        version
+                                                                            </th>
+                                    <td></td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        access
+                                                                            </th>
+                                    <td>public</td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>Net_SFTP</td>
+                                </tr>
+                                                                                                                            </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                            <a id="method_Net_SFTP"></a>
+                        <div class="element clickable method public method_Net_SFTP" data-toggle="collapse" data-target=".method_Net_SFTP .collapse">
+                            <h2>Default Constructor.</h2>
+                            <pre>Net_SFTP(String $host, $port = 22, $timeout = 10) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Connects to an SFTP server</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$host</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$port</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$timeout</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_login"></a>
+                        <div class="element clickable method public method_login" data-toggle="collapse" data-target=".method_login .collapse">
+                            <h2>Login</h2>
+                            <pre>login(String $username, $password = &#039;&#039;) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$username</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$password</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_pwd"></a>
+                        <div class="element clickable method public method_pwd" data-toggle="collapse" data-target=".method_pwd .collapse">
+                            <h2>Returns the current directory name</h2>
+                            <pre>pwd() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__logError"></a>
+                        <div class="element clickable method public method__logError" data-toggle="collapse" data-target=".method__logError .collapse">
+                            <h2>Logs errors</h2>
+                            <pre>_logError(String $response, $status = -1) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$response</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$status</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__realpath"></a>
+                        <div class="element clickable method public method__realpath" data-toggle="collapse" data-target=".method__realpath .collapse">
+                            <h2>Canonicalize the Server-Side Path Name</h2>
+                            <pre>_realpath(String $dir, $check_dir = true) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>SFTP doesn't provide a mechanism by which the current working directory can be changed, so we'll emulate it.  Returns
+the absolute (canonicalized) path.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$check_dir</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_chdir"></a>
+                        <div class="element clickable method public method_chdir" data-toggle="collapse" data-target=".method_chdir .collapse">
+                            <h2>Changes the current directory</h2>
+                            <pre>chdir(String $dir) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_nlist"></a>
+                        <div class="element clickable method public method_nlist" data-toggle="collapse" data-target=".method_nlist .collapse">
+                            <h2>Returns a list of files in the given directory</h2>
+                            <pre>nlist($dir = &#039;.&#039;) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_rawlist"></a>
+                        <div class="element clickable method public method_rawlist" data-toggle="collapse" data-target=".method_rawlist .collapse">
+                            <h2>Returns a detailed list of files in the given directory</h2>
+                            <pre>rawlist($dir = &#039;.&#039;) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__list"></a>
+                        <div class="element clickable method public method__list" data-toggle="collapse" data-target=".method__list .collapse">
+                            <h2>Reads a list, be it detailed or not, of files in the given directory</h2>
+                            <pre>_list($dir, $raw = true, $realpath = true) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$raw</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$realpath</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_size"></a>
+                        <div class="element clickable method public method_size" data-toggle="collapse" data-target=".method_size .collapse">
+                            <h2>Returns the file size, in bytes, or false, on failure</h2>
+                            <pre>size(String $filename) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Files larger than 4GB will show up as being exactly 4GB.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__save_dir"></a>
+                        <div class="element clickable method public method__save_dir" data-toggle="collapse" data-target=".method__save_dir .collapse">
+                            <h2>Save directories to cache</h2>
+                            <pre>_save_dir(String $dir) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__remove_dir"></a>
+                        <div class="element clickable method public method__remove_dir" data-toggle="collapse" data-target=".method__remove_dir .collapse">
+                            <h2>Remove directories from cache</h2>
+                            <pre>_remove_dir(String $dir) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__is_dir"></a>
+                        <div class="element clickable method public method__is_dir" data-toggle="collapse" data-target=".method__is_dir .collapse">
+                            <h2>Checks cache for directory</h2>
+                            <pre>_is_dir(String $dir) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_stat"></a>
+                        <div class="element clickable method public method_stat" data-toggle="collapse" data-target=".method_stat .collapse">
+                            <h2>Returns general information about a file.</h2>
+                            <pre>stat(String $filename) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns an array on success and false otherwise.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_lstat"></a>
+                        <div class="element clickable method public method_lstat" data-toggle="collapse" data-target=".method_lstat .collapse">
+                            <h2>Returns general information about a file or symbolic link.</h2>
+                            <pre>lstat(String $filename) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns an array on success and false otherwise.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__stat"></a>
+                        <div class="element clickable method public method__stat" data-toggle="collapse" data-target=".method__stat .collapse">
+                            <h2>Returns general information about a file or symbolic link</h2>
+                            <pre>_stat(String $filename, Integer $type) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Determines information without calling Net_SFTP::_realpath().
+The second parameter can be either NET_SFTP_STAT or NET_SFTP_LSTAT.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__identify_type"></a>
+                        <div class="element clickable method public method__identify_type" data-toggle="collapse" data-target=".method__identify_type .collapse">
+                            <h2>Attempt to identify the file type</h2>
+                            <pre>_identify_type(String $path, $stat1, $stat2) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$stat1</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$stat2</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__size"></a>
+                        <div class="element clickable method public method__size" data-toggle="collapse" data-target=".method__size .collapse">
+                            <h2>Returns the file size, in bytes, or false, on failure</h2>
+                            <pre>_size(String $filename) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Determines the size without calling Net_SFTP::_realpath()</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_chmod"></a>
+                        <div class="element clickable method public method_chmod" data-toggle="collapse" data-target=".method_chmod .collapse">
+                            <h2>Set permissions on a file.</h2>
+                            <pre>chmod(Integer $mode, String $filename, $recursive = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns the new file permissions on success or FALSE on error.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mode</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$recursive</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__chmod_recursive"></a>
+                        <div class="element clickable method public method__chmod_recursive" data-toggle="collapse" data-target=".method__chmod_recursive .collapse">
+                            <h2>Recursively chmods directories on the SFTP server</h2>
+                            <pre>_chmod_recursive(Integer $mode, $path, $i) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Minimizes directory lookups and SSH_FXP_STATUS requests for speed.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mode</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$i</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_mkdir"></a>
+                        <div class="element clickable method public method_mkdir" data-toggle="collapse" data-target=".method_mkdir .collapse">
+                            <h2>Creates a directory.</h2>
+                            <pre>mkdir(String $dir) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__mkdir_helper"></a>
+                        <div class="element clickable method public method__mkdir_helper" data-toggle="collapse" data-target=".method__mkdir_helper .collapse">
+                            <h2>Helper function for directory creation</h2>
+                            <pre>_mkdir_helper(String $dir) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_rmdir"></a>
+                        <div class="element clickable method public method_rmdir" data-toggle="collapse" data-target=".method_rmdir .collapse">
+                            <h2>Removes a directory.</h2>
+                            <pre>rmdir(String $dir) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$dir</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__read_put_responses"></a>
+                        <div class="element clickable method public method__read_put_responses" data-toggle="collapse" data-target=".method__read_put_responses .collapse">
+                            <h2>Reads multiple successive SSH_FXP_WRITE responses</h2>
+                            <pre>_read_put_responses(Integer $i) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Sending an SSH_FXP_WRITE packet and immediately reading its response isn't as efficient as blindly sending out $i
+SSH_FXP_WRITEs, in succession, and then reading $i responses.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$i</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_get"></a>
+                        <div class="element clickable method public method_get" data-toggle="collapse" data-target=".method_get .collapse">
+                            <h2>Downloads a file from the SFTP server.</h2>
+                            <pre>get(String $remote_file, $local_file = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns a string containing the contents of $remote_file if $local_file is left undefined or a boolean false if
+the operation was unsuccessful.  If $local_file is defined, returns true or false depending on the success of the
+operation</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$remote_file</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$local_file</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_delete"></a>
+                        <div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+                            <h2>Deletes a file on the SFTP server.</h2>
+                            <pre>delete(String $path, Boolean $recursive = true) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$recursive</h4>
+                                                <code>Boolean</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__delete_recursive"></a>
+                        <div class="element clickable method public method__delete_recursive" data-toggle="collapse" data-target=".method__delete_recursive .collapse">
+                            <h2>Recursively deletes directories on the SFTP server</h2>
+                            <pre>_delete_recursive(String $path, Integer $i) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Minimizes directory lookups and SSH_FXP_STATUS requests for speed.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$i</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_rename"></a>
+                        <div class="element clickable method public method_rename" data-toggle="collapse" data-target=".method_rename .collapse">
+                            <h2>Renames a file or a directory on the SFTP server</h2>
+                            <pre>rename(String $oldname, String $newname) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$oldname</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$newname</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__parseAttributes"></a>
+                        <div class="element clickable method public method__parseAttributes" data-toggle="collapse" data-target=".method__parseAttributes .collapse">
+                            <h2>Parse Attributes</h2>
+                            <pre>_parseAttributes(String $response) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>See '7.  File Attributes' of draft-ietf-secsh-filexfer-13 for more info.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$response</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__parseLongname"></a>
+                        <div class="element clickable method public method__parseLongname" data-toggle="collapse" data-target=".method__parseLongname .collapse">
+                            <h2>Parse Longname</h2>
+                            <pre>_parseLongname(String $longname) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>SFTPv3 doesn't provide any easy way of identifying a file type.  You could try to open
+a file as a directory and see if an error is returned or you could try to parse the
+SFTPv3-specific longname field of the SSH_FXP_NAME packet.  That's what this function does.
+The result is returned using the
+{@link http://tools.ietf.org/html/draft-ietf-secsh-filexfer-04#section-5.2 SFTPv4 type constants}.</p>
+
+<p>If the longname is in an unrecognized format bool(false) is returned.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$longname</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__send_sftp_packet"></a>
+                        <div class="element clickable method public method__send_sftp_packet" data-toggle="collapse" data-target=".method__send_sftp_packet .collapse">
+                            <h2>Sends SFTP Packets</h2>
+                            <pre>_send_sftp_packet(Integer $type, String $data) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>See '6. General Packet Format' of draft-ietf-secsh-filexfer-13 for more info.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$type</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__get_sftp_packet"></a>
+                        <div class="element clickable method public method__get_sftp_packet" data-toggle="collapse" data-target=".method__get_sftp_packet .collapse">
+                            <h2>Receives SFTP Packets</h2>
+                            <pre>_get_sftp_packet() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>See '6. General Packet Format' of draft-ietf-secsh-filexfer-13 for more info.</p>
+
+<p>Incidentally, the number of SSH_MSG_CHANNEL_DATA messages has no bearing on the number of SFTP packets present.
+There can be one SSH_MSG_CHANNEL_DATA messages containing two SFTP packets or there can be two SSH_MSG_CHANNEL_DATA
+messages containing one SFTP packet.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSFTPLog"></a>
+                        <div class="element clickable method public method_getSFTPLog" data-toggle="collapse" data-target=".method_getSFTPLog .collapse">
+                            <h2>Returns a log of the packets that have been sent and received.</h2>
+                            <pre>getSFTPLog() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns a string if NET_SFTP_LOGGING == NET_SFTP_LOG_COMPLEX, an array if NET_SFTP_LOGGING == NET_SFTP_LOG_SIMPLE and false if !defined('NET_SFTP_LOGGING')</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSFTPErrors"></a>
+                        <div class="element clickable method public method_getSFTPErrors" data-toggle="collapse" data-target=".method_getSFTPErrors .collapse">
+                            <h2>Returns all errors</h2>
+                            <pre>getSFTPErrors() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getLastSFTPError"></a>
+                        <div class="element clickable method public method_getLastSFTPError" data-toggle="collapse" data-target=".method_getLastSFTPError .collapse">
+                            <h2>Returns the last error</h2>
+                            <pre>getLastSFTPError() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSupportedVersions"></a>
+                        <div class="element clickable method public method_getSupportedVersions" data-toggle="collapse" data-target=".method_getSupportedVersions .collapse">
+                            <h2>Get supported SFTP versions</h2>
+                            <pre>getSupportedVersions() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__disconnect"></a>
+                        <div class="element clickable method public method__disconnect" data-toggle="collapse" data-target=".method__disconnect .collapse">
+                            <h2>Disconnect</h2>
+                            <pre>_disconnect(Integer $reason) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reason</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                            <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_packet_types"> </a>
+                            <div class="element clickable property public property_packet_types" data-toggle="collapse" data-target=".property_packet_types .collapse">
+                                <h2>Packet Types</h2>
+                                <pre>packet_types</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_status_codes"> </a>
+                            <div class="element clickable property public property_status_codes" data-toggle="collapse" data-target=".property_status_codes .collapse">
+                                <h2>Status Codes</h2>
+                                <pre>status_codes</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_request_id"> </a>
+                            <div class="element clickable property public property_request_id" data-toggle="collapse" data-target=".property_request_id .collapse">
+                                <h2>The Request ID</h2>
+                                <pre>request_id</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The request ID exists in the off chance that a packet is sent out-of-order.  Of course, this library doesn't support
+concurrent actions, so it's somewhat academic, here.</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_packet_type"> </a>
+                            <div class="element clickable property public property_packet_type" data-toggle="collapse" data-target=".property_packet_type .collapse">
+                                <h2>The Packet Type</h2>
+                                <pre>packet_type</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The request ID exists in the off chance that a packet is sent out-of-order.  Of course, this library doesn't support
+concurrent actions, so it's somewhat academic, here.</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_packet_buffer"> </a>
+                            <div class="element clickable property public property_packet_buffer" data-toggle="collapse" data-target=".property_packet_buffer .collapse">
+                                <h2>Packet Buffer</h2>
+                                <pre>packet_buffer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_extensions"> </a>
+                            <div class="element clickable property public property_extensions" data-toggle="collapse" data-target=".property_extensions .collapse">
+                                <h2>Extensions supported by the server</h2>
+                                <pre>extensions</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_version"> </a>
+                            <div class="element clickable property public property_version" data-toggle="collapse" data-target=".property_version .collapse">
+                                <h2>Server SFTP version</h2>
+                                <pre>version</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_pwd"> </a>
+                            <div class="element clickable property public property_pwd" data-toggle="collapse" data-target=".property_pwd .collapse">
+                                <h2>Current working directory</h2>
+                                <pre>pwd</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_packet_type_log"> </a>
+                            <div class="element clickable property public property_packet_type_log" data-toggle="collapse" data-target=".property_packet_type_log .collapse">
+                                <h2>Packet Type Log</h2>
+                                <pre>packet_type_log</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_packet_log"> </a>
+                            <div class="element clickable property public property_packet_log" data-toggle="collapse" data-target=".property_packet_log .collapse">
+                                <h2>Packet Log</h2>
+                                <pre>packet_log</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_sftp_errors"> </a>
+                            <div class="element clickable property public property_sftp_errors" data-toggle="collapse" data-target=".property_sftp_errors .collapse">
+                                <h2>Error information</h2>
+                                <pre>sftp_errors</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fileType"> </a>
+                            <div class="element clickable property public property_fileType" data-toggle="collapse" data-target=".property_fileType .collapse">
+                                <h2>File Type</h2>
+                                <pre>fileType</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dirs"> </a>
+                            <div class="element clickable property public property_dirs" data-toggle="collapse" data-target=".property_dirs .collapse">
+                                <h2>Directory Cache</h2>
+                                <pre>dirs</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Rather than always having to open a directory and close it immediately there after to see if a file is a directory or
+rather than always</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Net_SFTP"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/default.html">\</a>
+    </li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Net_SFTP.html">Net_SFTP</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer class="span12">
+    Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+    <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+    generated on Wed, 12 Jun 2013 15:09:57 +0000.<br/>
+</footer>
+</body>
+</html>

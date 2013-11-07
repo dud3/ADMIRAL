@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Net_SSH2
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="../js/template.js" type="text/javascript"></script>
+    <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span> </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                                                </ul>
+                    </li>
+                    <li class="dropdown" id="charts-menu">
+                        <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graph_class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../errors.html"><i class="icon-list-alt"></i>&#160;Errors</a></li>
+                            <li><a href="../markers.html"><i class="icon-list-alt"></i>&#160;Markers</a></li>
+                            <li><a href="../deprecated.html"><i class="icon-list-alt"></i>&#160;Deprecated</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="go_to_top">
+        <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+    </div>
+</div>
+
+<div id="___" class="container">
+    <noscript>
+        <div class="alert alert-warning">
+            Javascript is disabled; several features are only available if Javascript is enabled.
+        </div>
+    </noscript>
+
+        
+    <div class="row">
+        <div class="span4">
+            <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-custom icon-method"></i> Methods
+                    <ul>
+                                                                                <li class="method public">
+                                <a href="#method_Net_SSH2" title="Net_SSH2 :: Default Constructor.">
+                                    <span class="description">Default Constructor.</span><pre>Net_SSH2</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__key_exchange" title="_key_exchange :: Key Exchange">
+                                    <span class="description">Key Exchange</span><pre>_key_exchange</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__keyboard_interactive_login" title="_keyboard_interactive_login :: Login via keyboard-interactive authentication">
+                                    <span class="description">Login via keyboard-interactive authentication</span><pre>_keyboard_interactive_login</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__keyboard_interactive_process" title="_keyboard_interactive_process :: Handle the keyboard-interactive requests / responses.">
+                                    <span class="description">Handle the keyboard-interactive requests / responses.</span><pre>_keyboard_interactive_process</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_setTimeout" title="setTimeout :: Set Timeout">
+                                    <span class="description">Set Timeout</span><pre>setTimeout</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_exec" title="exec :: Execute Command">
+                                    <span class="description">Execute Command</span><pre>exec</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__initShell" title="_initShell :: Creates an interactive shell">
+                                    <span class="description">Creates an interactive shell</span><pre>_initShell</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_read" title="read :: Returns the output of an interactive shell">
+                                    <span class="description">Returns the output of an interactive shell</span><pre>read</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_write" title="write :: Inputs a command into an interactive shell.">
+                                    <span class="description">Inputs a command into an interactive shell.</span><pre>write</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_disconnect" title="disconnect :: Disconnect">
+                                    <span class="description">Disconnect</span><pre>disconnect</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method___destruct" title="__destruct :: Destructor.">
+                                    <span class="description">Destructor.</span><pre>__destruct</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__get_binary_packet" title="_get_binary_packet :: Gets Binary Packets">
+                                    <span class="description">Gets Binary Packets</span><pre>_get_binary_packet</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__filter" title="_filter :: Filter Binary Packets">
+                                    <span class="description">Filter Binary Packets</span><pre>_filter</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_enableQuietMode" title="enableQuietMode :: Enable Quiet Mode">
+                                    <span class="description">Enable Quiet Mode</span><pre>enableQuietMode</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_disableQuietMode" title="disableQuietMode :: Disable Quiet Mode">
+                                    <span class="description">Disable Quiet Mode</span><pre>disableQuietMode</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__get_channel_packet" title="_get_channel_packet :: Gets channel data">
+                                    <span class="description">Gets channel data</span><pre>_get_channel_packet</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__send_binary_packet" title="_send_binary_packet :: Sends Binary Packets">
+                                    <span class="description">Sends Binary Packets</span><pre>_send_binary_packet</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__append_log" title="_append_log :: Logs data packets">
+                                    <span class="description">Logs data packets</span><pre>_append_log</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__send_channel_packet" title="_send_channel_packet :: Sends channel data">
+                                    <span class="description">Sends channel data</span><pre>_send_channel_packet</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__close_channel" title="_close_channel :: Closes and flushes a channel">
+                                    <span class="description">Closes and flushes a channel</span><pre>_close_channel</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__disconnect" title="_disconnect :: Disconnect">
+                                    <span class="description">Disconnect</span><pre>_disconnect</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__string_shift" title="_string_shift :: String Shift">
+                                    <span class="description">String Shift</span><pre>_string_shift</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__define_array" title="_define_array :: Define Array">
+                                    <span class="description">Define Array</span><pre>_define_array</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getLog" title="getLog :: Returns a log of the packets that have been sent and received.">
+                                    <span class="description">Returns a log of the packets that have been sent and received.</span><pre>getLog</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__format_log" title="_format_log :: Formats a log for printing">
+                                    <span class="description">Formats a log for printing</span><pre>_format_log</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getErrors" title="getErrors :: Returns all errors">
+                                    <span class="description">Returns all errors</span><pre>getErrors</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getLastError" title="getLastError :: Returns the last error">
+                                    <span class="description">Returns the last error</span><pre>getLastError</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getServerIdentification" title="getServerIdentification :: Return the server identification.">
+                                    <span class="description">Return the server identification.</span><pre>getServerIdentification</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getKexAlgorithms" title="getKexAlgorithms :: Return a list of the key exchange algorithms the server supports.">
+                                    <span class="description">Return a list of the key exchange algorithms the server supports.</span><pre>getKexAlgorithms</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getServerHostKeyAlgorithms" title="getServerHostKeyAlgorithms :: Return a list of the host key (public key) algorithms the server supports.">
+                                    <span class="description">Return a list of the host key (public key) algorithms the server supports.</span><pre>getServerHostKeyAlgorithms</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getEncryptionAlgorithmsClient2Server" title="getEncryptionAlgorithmsClient2Server :: Return a list of the (symmetric key) encryption algorithms the server supports, when receiving stuff from the client.">
+                                    <span class="description">Return a list of the (symmetric key) encryption algorithms the server supports, when receiving stuff from the client.</span><pre>getEncryptionAlgorithmsClient2Server</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getEncryptionAlgorithmsServer2Client" title="getEncryptionAlgorithmsServer2Client :: Return a list of the (symmetric key) encryption algorithms the server supports, when sending stuff to the client.">
+                                    <span class="description">Return a list of the (symmetric key) encryption algorithms the server supports, when sending stuff to the client.</span><pre>getEncryptionAlgorithmsServer2Client</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getMACAlgorithmsClient2Server" title="getMACAlgorithmsClient2Server :: Return a list of the MAC algorithms the server supports, when receiving stuff from the client.">
+                                    <span class="description">Return a list of the MAC algorithms the server supports, when receiving stuff from the client.</span><pre>getMACAlgorithmsClient2Server</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getMACAlgorithmsServer2Client" title="getMACAlgorithmsServer2Client :: Return a list of the MAC algorithms the server supports, when sending stuff to the client.">
+                                    <span class="description">Return a list of the MAC algorithms the server supports, when sending stuff to the client.</span><pre>getMACAlgorithmsServer2Client</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getCompressionAlgorithmsClient2Server" title="getCompressionAlgorithmsClient2Server :: Return a list of the compression algorithms the server supports, when receiving stuff from the client.">
+                                    <span class="description">Return a list of the compression algorithms the server supports, when receiving stuff from the client.</span><pre>getCompressionAlgorithmsClient2Server</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getCompressionAlgorithmsServer2Client" title="getCompressionAlgorithmsServer2Client :: Return a list of the compression algorithms the server supports, when sending stuff to the client.">
+                                    <span class="description">Return a list of the compression algorithms the server supports, when sending stuff to the client.</span><pre>getCompressionAlgorithmsServer2Client</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getLanguagesServer2Client" title="getLanguagesServer2Client :: Return a list of the languages the server supports, when sending stuff to the client.">
+                                    <span class="description">Return a list of the languages the server supports, when sending stuff to the client.</span><pre>getLanguagesServer2Client</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getLanguagesClient2Server" title="getLanguagesClient2Server :: Return a list of the languages the server supports, when receiving stuff from the client.">
+                                    <span class="description">Return a list of the languages the server supports, when receiving stuff from the client.</span><pre>getLanguagesClient2Server</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getServerPublicHostKey" title="getServerPublicHostKey :: Returns the server public host key.">
+                                    <span class="description">Returns the server public host key.</span><pre>getServerPublicHostKey</pre>
+                                </a>
+                            </li>
+                                                                        </ul>
+                </li>
+                <li class="nav-header protected">» Protected
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                </li>
+                <li class="nav-header private">» Private
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                </li>
+                <li class="nav-header">
+                    <i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+                                            </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Net_SSH2</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Pure-PHP implementation of SSHv2.</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>Jim Wigginton &lt;terrafrost@php.net&gt;</td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        version
+                                                                            </th>
+                                    <td></td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        access
+                                                                            </th>
+                                    <td>public</td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>Net_SSH2</td>
+                                </tr>
+                                                                                                                            </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                            <a id="method_Net_SSH2"></a>
+                        <div class="element clickable method public method_Net_SSH2" data-toggle="collapse" data-target=".method_Net_SSH2 .collapse">
+                            <h2>Default Constructor.</h2>
+                            <pre>Net_SSH2(String $host, $port = 22, $timeout = 10) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Connects to an SSHv2 server</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$host</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$port</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$timeout</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__key_exchange"></a>
+                        <div class="element clickable method public method__key_exchange" data-toggle="collapse" data-target=".method__key_exchange .collapse">
+                            <h2>Key Exchange</h2>
+                            <pre>_key_exchange(String $kexinit_payload_server) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$kexinit_payload_server</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__keyboard_interactive_login"></a>
+                        <div class="element clickable method public method__keyboard_interactive_login" data-toggle="collapse" data-target=".method__keyboard_interactive_login .collapse">
+                            <h2>Login via keyboard-interactive authentication</h2>
+                            <pre>_keyboard_interactive_login(String $username, String $password) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>See {@link http://tools.ietf.org/html/rfc4256 RFC4256} for details.  This is not a full-featured keyboard-interactive authenticator.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$username</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$password</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__keyboard_interactive_process"></a>
+                        <div class="element clickable method public method__keyboard_interactive_process" data-toggle="collapse" data-target=".method__keyboard_interactive_process .collapse">
+                            <h2>Handle the keyboard-interactive requests / responses.</h2>
+                            <pre>_keyboard_interactive_process() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setTimeout"></a>
+                        <div class="element clickable method public method_setTimeout" data-toggle="collapse" data-target=".method_setTimeout .collapse">
+                            <h2>Set Timeout</h2>
+                            <pre>setTimeout(Mixed $timeout) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>$ssh->exec('ping 127.0.0.1'); on a Linux host will never return and will run indefinitely.  setTimeout() makes it so it'll timeout.
+Setting $timeout to false or 0 will mean there is no timeout.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$timeout</h4>
+                                                <code>Mixed</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_exec"></a>
+                        <div class="element clickable method public method_exec" data-toggle="collapse" data-target=".method_exec .collapse">
+                            <h2>Execute Command</h2>
+                            <pre>exec(String $command, $block = true) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If $block is set to false then Net_SSH2::_get_channel_packet(NET_SSH2_CHANNEL_EXEC) will need to be called manually.
+In all likelihood, this is not a feature you want to be taking advantage of.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$command</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$block</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__initShell"></a>
+                        <div class="element clickable method public method__initShell" data-toggle="collapse" data-target=".method__initShell .collapse">
+                            <h2>Creates an interactive shell</h2>
+                            <pre>_initShell() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_read"></a>
+                        <div class="element clickable method public method_read" data-toggle="collapse" data-target=".method_read .collapse">
+                            <h2>Returns the output of an interactive shell</h2>
+                            <pre>read(String $expect = &#039;&#039;, Integer $mode = NET_SSH2_READ_SIMPLE) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns when there's a match for $expect, which can take the form of a string literal or,
+if $mode == NET_SSH2_READ_REGEX, a regular expression.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$expect</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mode</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_write"></a>
+                        <div class="element clickable method public method_write" data-toggle="collapse" data-target=".method_write .collapse">
+                            <h2>Inputs a command into an interactive shell.</h2>
+                            <pre>write(String $cmd) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$cmd</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_disconnect"></a>
+                        <div class="element clickable method public method_disconnect" data-toggle="collapse" data-target=".method_disconnect .collapse">
+                            <h2>Disconnect</h2>
+                            <pre>disconnect() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___destruct"></a>
+                        <div class="element clickable method public method___destruct" data-toggle="collapse" data-target=".method___destruct .collapse">
+                            <h2>Destructor.</h2>
+                            <pre>__destruct() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Will be called, automatically, if you're supporting just PHP5.  If you're supporting PHP4, you'll need to call
+disconnect().</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__get_binary_packet"></a>
+                        <div class="element clickable method public method__get_binary_packet" data-toggle="collapse" data-target=".method__get_binary_packet .collapse">
+                            <h2>Gets Binary Packets</h2>
+                            <pre>_get_binary_packet() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>See '6. Binary Packet Protocol' of rfc4253 for more info.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__filter"></a>
+                        <div class="element clickable method public method__filter" data-toggle="collapse" data-target=".method__filter .collapse">
+                            <h2>Filter Binary Packets</h2>
+                            <pre>_filter($payload) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Because some binary packets need to be ignored...</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$payload</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_enableQuietMode"></a>
+                        <div class="element clickable method public method_enableQuietMode" data-toggle="collapse" data-target=".method_enableQuietMode .collapse">
+                            <h2>Enable Quiet Mode</h2>
+                            <pre>enableQuietMode() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Suppress stderr from output</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_disableQuietMode"></a>
+                        <div class="element clickable method public method_disableQuietMode" data-toggle="collapse" data-target=".method_disableQuietMode .collapse">
+                            <h2>Disable Quiet Mode</h2>
+                            <pre>disableQuietMode() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Show stderr in output</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__get_channel_packet"></a>
+                        <div class="element clickable method public method__get_channel_packet" data-toggle="collapse" data-target=".method__get_channel_packet .collapse">
+                            <h2>Gets channel data</h2>
+                            <pre>_get_channel_packet(mixed $client_channel, $skip_extended = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns the data as a string if it's available and false if not.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$client_channel</h4>
+                                                <code>mixed</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$skip_extended</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__send_binary_packet"></a>
+                        <div class="element clickable method public method__send_binary_packet" data-toggle="collapse" data-target=".method__send_binary_packet .collapse">
+                            <h2>Sends Binary Packets</h2>
+                            <pre>_send_binary_packet(String $data) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>See '6. Binary Packet Protocol' of rfc4253 for more info.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__append_log"></a>
+                        <div class="element clickable method public method__append_log" data-toggle="collapse" data-target=".method__append_log .collapse">
+                            <h2>Logs data packets</h2>
+                            <pre>_append_log($message_number, $message) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Makes sure that only the last 1MB worth of packets will be logged</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$message_number</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$message</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__send_channel_packet"></a>
+                        <div class="element clickable method public method__send_channel_packet" data-toggle="collapse" data-target=".method__send_channel_packet .collapse">
+                            <h2>Sends channel data</h2>
+                            <pre>_send_channel_packet(Integer $client_channel, String $data) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Spans multiple SSH_MSG_CHANNEL_DATAs if appropriate</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$client_channel</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__close_channel"></a>
+                        <div class="element clickable method public method__close_channel" data-toggle="collapse" data-target=".method__close_channel .collapse">
+                            <h2>Closes and flushes a channel</h2>
+                            <pre>_close_channel(Integer $client_channel) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Net_SSH2 doesn't properly close most channels.  For exec() channels are normally closed by the server
+and for SFTP channels are presumably closed when the client disconnects.  This functions is intended
+for SCP more than anything.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$client_channel</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__disconnect"></a>
+                        <div class="element clickable method public method__disconnect" data-toggle="collapse" data-target=".method__disconnect .collapse">
+                            <h2>Disconnect</h2>
+                            <pre>_disconnect(Integer $reason) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$reason</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__string_shift"></a>
+                        <div class="element clickable method public method__string_shift" data-toggle="collapse" data-target=".method__string_shift .collapse">
+                            <h2>String Shift</h2>
+                            <pre>_string_shift(String $string, $index = 1) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Inspired by array_shift</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$string</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$index</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__define_array"></a>
+                        <div class="element clickable method public method__define_array" data-toggle="collapse" data-target=".method__define_array .collapse">
+                            <h2>Define Array</h2>
+                            <pre>_define_array() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Takes any number of arrays whose indices are integers and whose values are strings and defines a bunch of
+named constants from it, using the value as the name of the constant and the index as the value of the constant.
+If any of the constants that would be defined already exists, none of the constants will be defined.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getLog"></a>
+                        <div class="element clickable method public method_getLog" data-toggle="collapse" data-target=".method_getLog .collapse">
+                            <h2>Returns a log of the packets that have been sent and received.</h2>
+                            <pre>getLog() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Returns a string if NET_SSH2_LOGGING == NET_SSH2_LOG_COMPLEX, an array if NET_SSH2_LOGGING == NET_SSH2_LOG_SIMPLE and false if !defined('NET_SSH2_LOGGING')</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__format_log"></a>
+                        <div class="element clickable method public method__format_log" data-toggle="collapse" data-target=".method__format_log .collapse">
+                            <h2>Formats a log for printing</h2>
+                            <pre>_format_log(Array $message_log, Array $message_number_log) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$message_log</h4>
+                                                <code>Array</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$message_number_log</h4>
+                                                <code>Array</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getErrors"></a>
+                        <div class="element clickable method public method_getErrors" data-toggle="collapse" data-target=".method_getErrors .collapse">
+                            <h2>Returns all errors</h2>
+                            <pre>getErrors() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getLastError"></a>
+                        <div class="element clickable method public method_getLastError" data-toggle="collapse" data-target=".method_getLastError .collapse">
+                            <h2>Returns the last error</h2>
+                            <pre>getLastError() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getServerIdentification"></a>
+                        <div class="element clickable method public method_getServerIdentification" data-toggle="collapse" data-target=".method_getServerIdentification .collapse">
+                            <h2>Return the server identification.</h2>
+                            <pre>getServerIdentification() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getKexAlgorithms"></a>
+                        <div class="element clickable method public method_getKexAlgorithms" data-toggle="collapse" data-target=".method_getKexAlgorithms .collapse">
+                            <h2>Return a list of the key exchange algorithms the server supports.</h2>
+                            <pre>getKexAlgorithms() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getServerHostKeyAlgorithms"></a>
+                        <div class="element clickable method public method_getServerHostKeyAlgorithms" data-toggle="collapse" data-target=".method_getServerHostKeyAlgorithms .collapse">
+                            <h2>Return a list of the host key (public key) algorithms the server supports.</h2>
+                            <pre>getServerHostKeyAlgorithms() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getEncryptionAlgorithmsClient2Server"></a>
+                        <div class="element clickable method public method_getEncryptionAlgorithmsClient2Server" data-toggle="collapse" data-target=".method_getEncryptionAlgorithmsClient2Server .collapse">
+                            <h2>Return a list of the (symmetric key) encryption algorithms the server supports, when receiving stuff from the client.</h2>
+                            <pre>getEncryptionAlgorithmsClient2Server() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getEncryptionAlgorithmsServer2Client"></a>
+                        <div class="element clickable method public method_getEncryptionAlgorithmsServer2Client" data-toggle="collapse" data-target=".method_getEncryptionAlgorithmsServer2Client .collapse">
+                            <h2>Return a list of the (symmetric key) encryption algorithms the server supports, when sending stuff to the client.</h2>
+                            <pre>getEncryptionAlgorithmsServer2Client() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getMACAlgorithmsClient2Server"></a>
+                        <div class="element clickable method public method_getMACAlgorithmsClient2Server" data-toggle="collapse" data-target=".method_getMACAlgorithmsClient2Server .collapse">
+                            <h2>Return a list of the MAC algorithms the server supports, when receiving stuff from the client.</h2>
+                            <pre>getMACAlgorithmsClient2Server() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getMACAlgorithmsServer2Client"></a>
+                        <div class="element clickable method public method_getMACAlgorithmsServer2Client" data-toggle="collapse" data-target=".method_getMACAlgorithmsServer2Client .collapse">
+                            <h2>Return a list of the MAC algorithms the server supports, when sending stuff to the client.</h2>
+                            <pre>getMACAlgorithmsServer2Client() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getCompressionAlgorithmsClient2Server"></a>
+                        <div class="element clickable method public method_getCompressionAlgorithmsClient2Server" data-toggle="collapse" data-target=".method_getCompressionAlgorithmsClient2Server .collapse">
+                            <h2>Return a list of the compression algorithms the server supports, when receiving stuff from the client.</h2>
+                            <pre>getCompressionAlgorithmsClient2Server() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getCompressionAlgorithmsServer2Client"></a>
+                        <div class="element clickable method public method_getCompressionAlgorithmsServer2Client" data-toggle="collapse" data-target=".method_getCompressionAlgorithmsServer2Client .collapse">
+                            <h2>Return a list of the compression algorithms the server supports, when sending stuff to the client.</h2>
+                            <pre>getCompressionAlgorithmsServer2Client() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getLanguagesServer2Client"></a>
+                        <div class="element clickable method public method_getLanguagesServer2Client" data-toggle="collapse" data-target=".method_getLanguagesServer2Client .collapse">
+                            <h2>Return a list of the languages the server supports, when sending stuff to the client.</h2>
+                            <pre>getLanguagesServer2Client() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getLanguagesClient2Server"></a>
+                        <div class="element clickable method public method_getLanguagesClient2Server" data-toggle="collapse" data-target=".method_getLanguagesClient2Server .collapse">
+                            <h2>Return a list of the languages the server supports, when receiving stuff from the client.</h2>
+                            <pre>getLanguagesClient2Server() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getServerPublicHostKey"></a>
+                        <div class="element clickable method public method_getServerPublicHostKey" data-toggle="collapse" data-target=".method_getServerPublicHostKey .collapse">
+                            <h2>Returns the server public host key.</h2>
+                            <pre>getServerPublicHostKey() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Caching this the first time you connect to a server and checking the result on subsequent connections
+is recommended.  Returns false if the server signature is not signed correctly with the public host key.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                            <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_identifier"> </a>
+                            <div class="element clickable property public property_identifier" data-toggle="collapse" data-target=".property_identifier .collapse">
+                                <h2>The SSH identifier</h2>
+                                <pre>identifier</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fsock"> </a>
+                            <div class="element clickable property public property_fsock" data-toggle="collapse" data-target=".property_fsock .collapse">
+                                <h2>The Socket Object</h2>
+                                <pre>fsock</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_bitmap"> </a>
+                            <div class="element clickable property public property_bitmap" data-toggle="collapse" data-target=".property_bitmap .collapse">
+                                <h2>Execution Bitmap</h2>
+                                <pre>bitmap</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The bits that are set represent functions that have been called already.  This is used to determine
+if a requisite function has been successfully executed.  If not, an error should be thrown.</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_errors"> </a>
+                            <div class="element clickable property public property_errors" data-toggle="collapse" data-target=".property_errors .collapse">
+                                <h2>Error information</h2>
+                                <pre>errors</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_server_identifier"> </a>
+                            <div class="element clickable property public property_server_identifier" data-toggle="collapse" data-target=".property_server_identifier .collapse">
+                                <h2>Server Identifier</h2>
+                                <pre>server_identifier</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_kex_algorithms"> </a>
+                            <div class="element clickable property public property_kex_algorithms" data-toggle="collapse" data-target=".property_kex_algorithms .collapse">
+                                <h2>Key Exchange Algorithms</h2>
+                                <pre>kex_algorithms</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_server_host_key_algorithms"> </a>
+                            <div class="element clickable property public property_server_host_key_algorithms" data-toggle="collapse" data-target=".property_server_host_key_algorithms .collapse">
+                                <h2>Server Host Key Algorithms</h2>
+                                <pre>server_host_key_algorithms</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_encryption_algorithms_client_to_server"> </a>
+                            <div class="element clickable property public property_encryption_algorithms_client_to_server" data-toggle="collapse" data-target=".property_encryption_algorithms_client_to_server .collapse">
+                                <h2>Encryption Algorithms: Client to Server</h2>
+                                <pre>encryption_algorithms_client_to_server</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_encryption_algorithms_server_to_client"> </a>
+                            <div class="element clickable property public property_encryption_algorithms_server_to_client" data-toggle="collapse" data-target=".property_encryption_algorithms_server_to_client .collapse">
+                                <h2>Encryption Algorithms: Server to Client</h2>
+                                <pre>encryption_algorithms_server_to_client</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_mac_algorithms_client_to_server"> </a>
+                            <div class="element clickable property public property_mac_algorithms_client_to_server" data-toggle="collapse" data-target=".property_mac_algorithms_client_to_server .collapse">
+                                <h2>MAC Algorithms: Client to Server</h2>
+                                <pre>mac_algorithms_client_to_server</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_mac_algorithms_server_to_client"> </a>
+                            <div class="element clickable property public property_mac_algorithms_server_to_client" data-toggle="collapse" data-target=".property_mac_algorithms_server_to_client .collapse">
+                                <h2>MAC Algorithms: Server to Client</h2>
+                                <pre>mac_algorithms_server_to_client</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_compression_algorithms_client_to_server"> </a>
+                            <div class="element clickable property public property_compression_algorithms_client_to_server" data-toggle="collapse" data-target=".property_compression_algorithms_client_to_server .collapse">
+                                <h2>Compression Algorithms: Client to Server</h2>
+                                <pre>compression_algorithms_client_to_server</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_compression_algorithms_server_to_client"> </a>
+                            <div class="element clickable property public property_compression_algorithms_server_to_client" data-toggle="collapse" data-target=".property_compression_algorithms_server_to_client .collapse">
+                                <h2>Compression Algorithms: Server to Client</h2>
+                                <pre>compression_algorithms_server_to_client</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_languages_server_to_client"> </a>
+                            <div class="element clickable property public property_languages_server_to_client" data-toggle="collapse" data-target=".property_languages_server_to_client .collapse">
+                                <h2>Languages: Server to Client</h2>
+                                <pre>languages_server_to_client</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_languages_client_to_server"> </a>
+                            <div class="element clickable property public property_languages_client_to_server" data-toggle="collapse" data-target=".property_languages_client_to_server .collapse">
+                                <h2>Languages: Client to Server</h2>
+                                <pre>languages_client_to_server</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_encrypt_block_size"> </a>
+                            <div class="element clickable property public property_encrypt_block_size" data-toggle="collapse" data-target=".property_encrypt_block_size .collapse">
+                                <h2>Block Size for Server to Client Encryption</h2>
+                                <pre>encrypt_block_size</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>"Note that the length of the concatenation of 'packet_length',
+ 'padding_length', 'payload', and 'random padding' MUST be a multiple
+ of the cipher block size or 8, whichever is larger.  This constraint
+ MUST be enforced, even when using stream ciphers."</p>
+
+<p>-- http://tools.ietf.org/html/rfc4253#section-6</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_decrypt_block_size"> </a>
+                            <div class="element clickable property public property_decrypt_block_size" data-toggle="collapse" data-target=".property_decrypt_block_size .collapse">
+                                <h2>Block Size for Client to Server Encryption</h2>
+                                <pre>decrypt_block_size</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_decrypt"> </a>
+                            <div class="element clickable property public property_decrypt" data-toggle="collapse" data-target=".property_decrypt .collapse">
+                                <h2>Server to Client Encryption Object</h2>
+                                <pre>decrypt</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_encrypt"> </a>
+                            <div class="element clickable property public property_encrypt" data-toggle="collapse" data-target=".property_encrypt .collapse">
+                                <h2>Client to Server Encryption Object</h2>
+                                <pre>encrypt</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_hmac_create"> </a>
+                            <div class="element clickable property public property_hmac_create" data-toggle="collapse" data-target=".property_hmac_create .collapse">
+                                <h2>Client to Server HMAC Object</h2>
+                                <pre>hmac_create</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_hmac_check"> </a>
+                            <div class="element clickable property public property_hmac_check" data-toggle="collapse" data-target=".property_hmac_check .collapse">
+                                <h2>Server to Client HMAC Object</h2>
+                                <pre>hmac_check</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_hmac_size"> </a>
+                            <div class="element clickable property public property_hmac_size" data-toggle="collapse" data-target=".property_hmac_size .collapse">
+                                <h2>Size of server to client HMAC</h2>
+                                <pre>hmac_size</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>We need to know how big the HMAC will be for the server to client direction so that we know how many bytes to read.
+For the client to server side, the HMAC object will make the HMAC as long as it needs to be.  All we need to do is
+append it.</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_server_public_host_key"> </a>
+                            <div class="element clickable property public property_server_public_host_key" data-toggle="collapse" data-target=".property_server_public_host_key .collapse">
+                                <h2>Server Public Host Key</h2>
+                                <pre>server_public_host_key</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_session_id"> </a>
+                            <div class="element clickable property public property_session_id" data-toggle="collapse" data-target=".property_session_id .collapse">
+                                <h2>Session identifer</h2>
+                                <pre>session_id</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>"The exchange hash H from the first key exchange is additionally
+ used as the session identifier, which is a unique identifier for
+ this connection."</p>
+
+<p>-- http://tools.ietf.org/html/rfc4253#section-7.2</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_exchange_hash"> </a>
+                            <div class="element clickable property public property_exchange_hash" data-toggle="collapse" data-target=".property_exchange_hash .collapse">
+                                <h2>Exchange hash</h2>
+                                <pre>exchange_hash</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>The current exchange hash</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_message_numbers"> </a>
+                            <div class="element clickable property public property_message_numbers" data-toggle="collapse" data-target=".property_message_numbers .collapse">
+                                <h2>Message Numbers</h2>
+                                <pre>message_numbers</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_disconnect_reasons"> </a>
+                            <div class="element clickable property public property_disconnect_reasons" data-toggle="collapse" data-target=".property_disconnect_reasons .collapse">
+                                <h2>Disconnection Message &#039;reason codes&#039; defined in RFC4253</h2>
+                                <pre>disconnect_reasons</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_channel_open_failure_reasons"> </a>
+                            <div class="element clickable property public property_channel_open_failure_reasons" data-toggle="collapse" data-target=".property_channel_open_failure_reasons .collapse">
+                                <h2>SSH_MSG_CHANNEL_OPEN_FAILURE &#039;reason codes&#039;, defined in RFC4254</h2>
+                                <pre>channel_open_failure_reasons</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_terminal_modes"> </a>
+                            <div class="element clickable property public property_terminal_modes" data-toggle="collapse" data-target=".property_terminal_modes .collapse">
+                                <h2>Terminal Modes</h2>
+                                <pre>terminal_modes</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_channel_extended_data_type_codes"> </a>
+                            <div class="element clickable property public property_channel_extended_data_type_codes" data-toggle="collapse" data-target=".property_channel_extended_data_type_codes .collapse">
+                                <h2>SSH_MSG_CHANNEL_EXTENDED_DATA&#039;s data_type_codes</h2>
+                                <pre>channel_extended_data_type_codes</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_send_seq_no"> </a>
+                            <div class="element clickable property public property_send_seq_no" data-toggle="collapse" data-target=".property_send_seq_no .collapse">
+                                <h2>Send Sequence Number</h2>
+                                <pre>send_seq_no</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>See 'Section 6.4.  Data Integrity' of rfc4253 for more info.</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_get_seq_no"> </a>
+                            <div class="element clickable property public property_get_seq_no" data-toggle="collapse" data-target=".property_get_seq_no .collapse">
+                                <h2>Get Sequence Number</h2>
+                                <pre>get_seq_no</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>See 'Section 6.4.  Data Integrity' of rfc4253 for more info.</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_server_channels"> </a>
+                            <div class="element clickable property public property_server_channels" data-toggle="collapse" data-target=".property_server_channels .collapse">
+                                <h2>Server Channels</h2>
+                                <pre>server_channels</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Maps client channels to server channels</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_channel_buffers"> </a>
+                            <div class="element clickable property public property_channel_buffers" data-toggle="collapse" data-target=".property_channel_buffers .collapse">
+                                <h2>Channel Buffers</h2>
+                                <pre>channel_buffers</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>If a client requests a packet from one channel but receives two packets from another those packets should
+be placed in a buffer</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_channel_status"> </a>
+                            <div class="element clickable property public property_channel_status" data-toggle="collapse" data-target=".property_channel_status .collapse">
+                                <h2>Channel Status</h2>
+                                <pre>channel_status</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Contains the type of the last sent message</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_packet_size_client_to_server"> </a>
+                            <div class="element clickable property public property_packet_size_client_to_server" data-toggle="collapse" data-target=".property_packet_size_client_to_server .collapse">
+                                <h2>Packet Size</h2>
+                                <pre>packet_size_client_to_server</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Maximum packet size indexed by channel</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_message_number_log"> </a>
+                            <div class="element clickable property public property_message_number_log" data-toggle="collapse" data-target=".property_message_number_log .collapse">
+                                <h2>Message Number Log</h2>
+                                <pre>message_number_log</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_message_log"> </a>
+                            <div class="element clickable property public property_message_log" data-toggle="collapse" data-target=".property_message_log .collapse">
+                                <h2>Message Log</h2>
+                                <pre>message_log</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_window_size"> </a>
+                            <div class="element clickable property public property_window_size" data-toggle="collapse" data-target=".property_window_size .collapse">
+                                <h2>The Window Size</h2>
+                                <pre>window_size</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Bytes the other party can send before it must wait for the window to be adjusted (0x7FFFFFFF = 4GB)</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_window_size_client_to_server"> </a>
+                            <div class="element clickable property public property_window_size_client_to_server" data-toggle="collapse" data-target=".property_window_size_client_to_server .collapse">
+                                <h2>Window size</h2>
+                                <pre>window_size_client_to_server</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Window size indexed by channel</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_signature"> </a>
+                            <div class="element clickable property public property_signature" data-toggle="collapse" data-target=".property_signature .collapse">
+                                <h2>Server signature</h2>
+                                <pre>signature</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Verified against $this->session_id</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_signature_format"> </a>
+                            <div class="element clickable property public property_signature_format" data-toggle="collapse" data-target=".property_signature_format .collapse">
+                                <h2>Server signature format</h2>
+                                <pre>signature_format</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>ssh-rsa or ssh-dss.</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_interactiveBuffer"> </a>
+                            <div class="element clickable property public property_interactiveBuffer" data-toggle="collapse" data-target=".property_interactiveBuffer .collapse">
+                                <h2>Interactive Buffer</h2>
+                                <pre>interactiveBuffer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_log_size"> </a>
+                            <div class="element clickable property public property_log_size" data-toggle="collapse" data-target=".property_log_size .collapse">
+                                <h2>Current log size</h2>
+                                <pre>log_size</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"><p>Should never exceed NET_SSH2_LOG_MAX_SIZE</p>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_timeout"> </a>
+                            <div class="element clickable property public property_timeout" data-toggle="collapse" data-target=".property_timeout .collapse">
+                                <h2>Timeout</h2>
+                                <pre>timeout</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_curTimeout"> </a>
+                            <div class="element clickable property public property_curTimeout" data-toggle="collapse" data-target=".property_curTimeout .collapse">
+                                <h2>Current Timeout</h2>
+                                <pre>curTimeout</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_realtime_log_file"> </a>
+                            <div class="element clickable property public property_realtime_log_file" data-toggle="collapse" data-target=".property_realtime_log_file .collapse">
+                                <h2>Real-time log file pointer</h2>
+                                <pre>realtime_log_file</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_realtime_log_size"> </a>
+                            <div class="element clickable property public property_realtime_log_size" data-toggle="collapse" data-target=".property_realtime_log_size .collapse">
+                                <h2>Real-time log file size</h2>
+                                <pre>realtime_log_size</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_signature_validated"> </a>
+                            <div class="element clickable property public property_signature_validated" data-toggle="collapse" data-target=".property_signature_validated .collapse">
+                                <h2>Has the signature been validated?</h2>
+                                <pre>signature_validated</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_realtime_log_wrap"> </a>
+                            <div class="element clickable property public property_realtime_log_wrap" data-toggle="collapse" data-target=".property_realtime_log_wrap .collapse">
+                                <h2>Real-time log file wrap boolean</h2>
+                                <pre>realtime_log_wrap</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_quiet_mode"> </a>
+                            <div class="element clickable property public property_quiet_mode" data-toggle="collapse" data-target=".property_quiet_mode .collapse">
+                                <h2>Flag to suppress stderr from output</h2>
+                                <pre>quiet_mode</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Net_SSH2"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/default.html">\</a>
+    </li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Net_SSH2.html">Net_SSH2</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer class="span12">
+    Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+    <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+    generated on Wed, 12 Jun 2013 15:09:57 +0000.<br/>
+</footer>
+</body>
+</html>

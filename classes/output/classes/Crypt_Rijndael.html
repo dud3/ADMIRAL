@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Crypt_Rijndael
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="../js/template.js" type="text/javascript"></script>
+    <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span> </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                                                </ul>
+                    </li>
+                    <li class="dropdown" id="charts-menu">
+                        <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graph_class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../errors.html"><i class="icon-list-alt"></i>&#160;Errors</a></li>
+                            <li><a href="../markers.html"><i class="icon-list-alt"></i>&#160;Markers</a></li>
+                            <li><a href="../deprecated.html"><i class="icon-list-alt"></i>&#160;Deprecated</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="go_to_top">
+        <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+    </div>
+</div>
+
+<div id="___" class="container">
+    <noscript>
+        <div class="alert alert-warning">
+            Javascript is disabled; several features are only available if Javascript is enabled.
+        </div>
+    </noscript>
+
+        
+    <div class="row">
+        <div class="span4">
+            <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-custom icon-method"></i> Methods
+                    <ul>
+                                                                                <li class="method public">
+                                <a href="#method_Crypt_Rijndael" title="Crypt_Rijndael :: Default Constructor.">
+                                    <span class="description">Default Constructor.</span><pre>Crypt_Rijndael</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_setKey" title="setKey :: Sets the key.">
+                                    <span class="description">Sets the key.</span><pre>setKey</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_setIV" title="setIV :: Sets the initialization vector. (optional)">
+                                    <span class="description">Sets the initialization vector. (optional)</span><pre>setIV</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_setKeyLength" title="setKeyLength :: Sets the key length">
+                                    <span class="description">Sets the key length</span><pre>setKeyLength</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_setPassword" title="setPassword :: Sets the password.">
+                                    <span class="description">Sets the password.</span><pre>setPassword</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_setBlockLength" title="setBlockLength :: Sets the block length">
+                                    <span class="description">Sets the block length</span><pre>setBlockLength</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__generate_xor" title="_generate_xor :: Generate CTR XOR encryption key">
+                                    <span class="description">Generate CTR XOR encryption key</span><pre>_generate_xor</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_encrypt" title="encrypt :: Encrypts a message.">
+                                    <span class="description">Encrypts a message.</span><pre>encrypt</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_decrypt" title="decrypt :: Decrypts a message.">
+                                    <span class="description">Decrypts a message.</span><pre>decrypt</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__encryptBlock" title="_encryptBlock :: Encrypts a block">
+                                    <span class="description">Encrypts a block</span><pre>_encryptBlock</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__decryptBlock" title="_decryptBlock :: Decrypts a block">
+                                    <span class="description">Decrypts a block</span><pre>_decryptBlock</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__setup" title="_setup :: Setup Rijndael">
+                                    <span class="description">Setup Rijndael</span><pre>_setup</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__subWord" title="_subWord :: Performs S-Box substitutions">
+                                    <span class="description">Performs S-Box substitutions</span><pre>_subWord</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__invSubWord" title="_invSubWord :: Performs inverse S-Box substitutions">
+                                    <span class="description">Performs inverse S-Box substitutions</span><pre>_invSubWord</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_enablePadding" title="enablePadding :: Pad &quot;packets&quot;.">
+                                    <span class="description">Pad &quot;packets&quot;.</span><pre>enablePadding</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_disablePadding" title="disablePadding :: Do not pad packets.">
+                                    <span class="description">Do not pad packets.</span><pre>disablePadding</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__pad" title="_pad :: Pads a string">
+                                    <span class="description">Pads a string</span><pre>_pad</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__unpad" title="_unpad :: Unpads a string.">
+                                    <span class="description">Unpads a string.</span><pre>_unpad</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_enableContinuousBuffer" title="enableContinuousBuffer :: Treat consecutive &quot;packets&quot; as if they are a continuous buffer.">
+                                    <span class="description">Treat consecutive &quot;packets&quot; as if they are a continuous buffer.</span><pre>enableContinuousBuffer</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_disableContinuousBuffer" title="disableContinuousBuffer :: Treat consecutive packets as if they are a discontinuous buffer.">
+                                    <span class="description">Treat consecutive packets as if they are a discontinuous buffer.</span><pre>disableContinuousBuffer</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__string_shift" title="_string_shift :: String Shift">
+                                    <span class="description">String Shift</span><pre>_string_shift</pre>
+                                </a>
+                            </li>
+                                                                        </ul>
+                </li>
+                <li class="nav-header protected">» Protected
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                </li>
+                <li class="nav-header private">» Private
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                </li>
+                <li class="nav-header">
+                    <i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+                                            </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Crypt_Rijndael</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Pure-PHP implementation of Rijndael.</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>Jim Wigginton &lt;terrafrost@php.net&gt;</td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        version
+                                                                            </th>
+                                    <td></td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        access
+                                                                            </th>
+                                    <td>public</td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>Crypt_Rijndael</td>
+                                </tr>
+                                                                                                                            </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                            <a id="method_Crypt_Rijndael"></a>
+                        <div class="element clickable method public method_Crypt_Rijndael" data-toggle="collapse" data-target=".method_Crypt_Rijndael .collapse">
+                            <h2>Default Constructor.</h2>
+                            <pre>Crypt_Rijndael($mode = CRYPT_RIJNDAEL_MODE_CBC) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Determines whether or not the mcrypt extension should be used.  $mode should only, at present, be
+CRYPT_RIJNDAEL_MODE_ECB or CRYPT_RIJNDAEL_MODE_CBC.  If not explictly set, CRYPT_RIJNDAEL_MODE_CBC will be used.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$mode</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setKey"></a>
+                        <div class="element clickable method public method_setKey" data-toggle="collapse" data-target=".method_setKey .collapse">
+                            <h2>Sets the key.</h2>
+                            <pre>setKey(String $key) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Keys can be of any length.  Rijndael, itself, requires the use of a key that's between 128-bits and 256-bits long and
+whose length is a multiple of 32.  If the key is less than 256-bits and the key length isn't set, we round the length
+up to the closest valid key length, padding $key with null bytes.  If the key is more than 256-bits, we trim the
+excess bits.</p>
+
+<p>If the key is not explicitly set, it'll be assumed to be all null bytes.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setIV"></a>
+                        <div class="element clickable method public method_setIV" data-toggle="collapse" data-target=".method_setIV .collapse">
+                            <h2>Sets the initialization vector. (optional)</h2>
+                            <pre>setIV(String $iv) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>SetIV is not required when CRYPT_RIJNDAEL_MODE_ECB is being used.  If not explictly set, it'll be assumed
+to be all zero's.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$iv</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setKeyLength"></a>
+                        <div class="element clickable method public method_setKeyLength" data-toggle="collapse" data-target=".method_setKeyLength .collapse">
+                            <h2>Sets the key length</h2>
+                            <pre>setKeyLength(Integer $length) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Valid key lengths are 128, 160, 192, 224, and 256.  If the length is less than 128, it will be rounded up to
+128.  If the length is greater then 128 and invalid, it will be rounded down to the closest valid amount.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$length</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setPassword"></a>
+                        <div class="element clickable method public method_setPassword" data-toggle="collapse" data-target=".method_setPassword .collapse">
+                            <h2>Sets the password.</h2>
+                            <pre>setPassword(String $password, $method = &#039;pbkdf2&#039;) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Depending on what $method is set to, setPassword()'s (optional) parameters are as follows:
+    {@link http://en.wikipedia.org/wiki/PBKDF2 pbkdf2}:
+        $hash, $salt, $count
+    Set $dkLen by calling setKeyLength()</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$password</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setBlockLength"></a>
+                        <div class="element clickable method public method_setBlockLength" data-toggle="collapse" data-target=".method_setBlockLength .collapse">
+                            <h2>Sets the block length</h2>
+                            <pre>setBlockLength(Integer $length) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Valid block lengths are 128, 160, 192, 224, and 256.  If the length is less than 128, it will be rounded up to
+128.  If the length is greater then 128 and invalid, it will be rounded down to the closest valid amount.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$length</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__generate_xor"></a>
+                        <div class="element clickable method public method__generate_xor" data-toggle="collapse" data-target=".method__generate_xor .collapse">
+                            <h2>Generate CTR XOR encryption key</h2>
+                            <pre>_generate_xor(Integer $length, String $iv) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Encrypt the output of this and XOR it against the ciphertext / plaintext to get the
+plaintext / ciphertext in CTR mode.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$length</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$iv</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_encrypt"></a>
+                        <div class="element clickable method public method_encrypt" data-toggle="collapse" data-target=".method_encrypt .collapse">
+                            <h2>Encrypts a message.</h2>
+                            <pre>encrypt(String $plaintext) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>$plaintext will be padded with additional bytes such that it's length is a multiple of the block size.  Other Rjindael
+implementations may or may not pad in the same manner.  Other common approaches to padding and the reasons why it's
+necessary are discussed in the following
+URL:</p>
+
+<p>{@link http://www.di-mgt.com.au/cryptopad.html http://www.di-mgt.com.au/cryptopad.html}</p>
+
+<p>An alternative to padding is to, separately, send the length of the file.  This is what SSH, in fact, does.
+strlen($plaintext) will still need to be a multiple of 8, however, arbitrary values can be added to make it that
+length.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$plaintext</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_decrypt"></a>
+                        <div class="element clickable method public method_decrypt" data-toggle="collapse" data-target=".method_decrypt .collapse">
+                            <h2>Decrypts a message.</h2>
+                            <pre>decrypt(String $ciphertext) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If strlen($ciphertext) is not a multiple of the block size, null bytes will be added to the end of the string until
+it is.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$ciphertext</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__encryptBlock"></a>
+                        <div class="element clickable method public method__encryptBlock" data-toggle="collapse" data-target=".method__encryptBlock .collapse">
+                            <h2>Encrypts a block</h2>
+                            <pre>_encryptBlock(String $in) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$in</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__decryptBlock"></a>
+                        <div class="element clickable method public method__decryptBlock" data-toggle="collapse" data-target=".method__decryptBlock .collapse">
+                            <h2>Decrypts a block</h2>
+                            <pre>_decryptBlock(String $in) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$in</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__setup"></a>
+                        <div class="element clickable method public method__setup" data-toggle="collapse" data-target=".method__setup .collapse">
+                            <h2>Setup Rijndael</h2>
+                            <pre>_setup() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Validates all the variables and calculates $Nr - the number of rounds that need to be performed - and $w - the key
+key schedule.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__subWord"></a>
+                        <div class="element clickable method public method__subWord" data-toggle="collapse" data-target=".method__subWord .collapse">
+                            <h2>Performs S-Box substitutions</h2>
+                            <pre>_subWord($word) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$word</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__invSubWord"></a>
+                        <div class="element clickable method public method__invSubWord" data-toggle="collapse" data-target=".method__invSubWord .collapse">
+                            <h2>Performs inverse S-Box substitutions</h2>
+                            <pre>_invSubWord($word) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$word</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_enablePadding"></a>
+                        <div class="element clickable method public method_enablePadding" data-toggle="collapse" data-target=".method_enablePadding .collapse">
+                            <h2>Pad &quot;packets&quot;.</h2>
+                            <pre>enablePadding() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Rijndael works by encrypting between sixteen and thirty-two bytes at a time, provided that number is also a multiple
+of four.  If you ever need to encrypt or decrypt something that isn't of the proper length, it becomes necessary to
+pad the input so that it is of the proper length.</p>
+
+<p>Padding is enabled by default.  Sometimes, however, it is undesirable to pad strings.  Such is the case in SSH,
+where "packets" are padded with random bytes before being encrypted.  Unpad these packets and you risk stripping
+away characters that shouldn't be stripped away. (SSH knows how many bytes are added because the length is
+transmitted separately)</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_disablePadding"></a>
+                        <div class="element clickable method public method_disablePadding" data-toggle="collapse" data-target=".method_disablePadding .collapse">
+                            <h2>Do not pad packets.</h2>
+                            <pre>disablePadding() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__pad"></a>
+                        <div class="element clickable method public method__pad" data-toggle="collapse" data-target=".method__pad .collapse">
+                            <h2>Pads a string</h2>
+                            <pre>_pad($text) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Pads a string using the RSA PKCS padding standards so that its length is a multiple of the blocksize.
+$block_size - (strlen($text) % $block_size) bytes are added, each of which is equal to
+chr($block_size - (strlen($text) % $block_size)</p>
+
+<p>If padding is disabled and $text is not a multiple of the blocksize, the string will be padded regardless
+and padding will, hence forth, be enabled.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__unpad"></a>
+                        <div class="element clickable method public method__unpad" data-toggle="collapse" data-target=".method__unpad .collapse">
+                            <h2>Unpads a string.</h2>
+                            <pre>_unpad($text) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If padding is enabled and the reported padding length is invalid the encryption key will be assumed to be wrong
+and false will be returned.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_enableContinuousBuffer"></a>
+                        <div class="element clickable method public method_enableContinuousBuffer" data-toggle="collapse" data-target=".method_enableContinuousBuffer .collapse">
+                            <h2>Treat consecutive &quot;packets&quot; as if they are a continuous buffer.</h2>
+                            <pre>enableContinuousBuffer() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Say you have a 32-byte plaintext $plaintext.  Using the default behavior, the two following code snippets
+will yield different outputs:</p>
+
+<p><code>
+   echo $rijndael->encrypt(substr($plaintext,  0, 16));
+   echo $rijndael->encrypt(substr($plaintext, 16, 16));
+</code>
+<code>
+   echo $rijndael->encrypt($plaintext);
+</code></p>
+
+<p>The solution is to enable the continuous buffer.  Although this will resolve the above discrepancy, it creates
+another, as demonstrated with the following:</p>
+
+<p><code>
+   $rijndael->encrypt(substr($plaintext, 0, 16));
+   echo $rijndael->decrypt($des->encrypt(substr($plaintext, 16, 16)));
+</code>
+<code>
+   echo $rijndael->decrypt($des->encrypt(substr($plaintext, 16, 16)));
+</code></p>
+
+<p>With the continuous buffer disabled, these would yield the same output.  With it enabled, they yield different
+outputs.  The reason is due to the fact that the initialization vector's change after every encryption /
+decryption round when the continuous buffer is enabled.  When it's disabled, they remain constant.</p>
+
+<p>Put another way, when the continuous buffer is enabled, the state of the Crypt_Rijndael() object changes after each
+encryption / decryption round, whereas otherwise, it'd remain constant.  For this reason, it's recommended that
+continuous buffers not be used.  They do offer better security and are, in fact, sometimes required (SSH uses them),
+however, they are also less intuitive and more likely to cause you problems.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_disableContinuousBuffer"></a>
+                        <div class="element clickable method public method_disableContinuousBuffer" data-toggle="collapse" data-target=".method_disableContinuousBuffer .collapse">
+                            <h2>Treat consecutive packets as if they are a discontinuous buffer.</h2>
+                            <pre>disableContinuousBuffer() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>The default behavior.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__string_shift"></a>
+                        <div class="element clickable method public method__string_shift" data-toggle="collapse" data-target=".method__string_shift .collapse">
+                            <h2>String Shift</h2>
+                            <pre>_string_shift(String $string, $index = 1) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Inspired by array_shift</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$string</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$index</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                            <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_mode"> </a>
+                            <div class="element clickable property public property_mode" data-toggle="collapse" data-target=".property_mode .collapse">
+                                <h2>The Encryption Mode</h2>
+                                <pre>mode</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_key"> </a>
+                            <div class="element clickable property public property_key" data-toggle="collapse" data-target=".property_key .collapse">
+                                <h2>The Key</h2>
+                                <pre>key</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_iv"> </a>
+                            <div class="element clickable property public property_iv" data-toggle="collapse" data-target=".property_iv .collapse">
+                                <h2>The Initialization Vector</h2>
+                                <pre>iv</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_encryptIV"> </a>
+                            <div class="element clickable property public property_encryptIV" data-toggle="collapse" data-target=".property_encryptIV .collapse">
+                                <h2>A &quot;sliding&quot; Initialization Vector</h2>
+                                <pre>encryptIV</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_decryptIV"> </a>
+                            <div class="element clickable property public property_decryptIV" data-toggle="collapse" data-target=".property_decryptIV .collapse">
+                                <h2>A &quot;sliding&quot; Initialization Vector</h2>
+                                <pre>decryptIV</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_continuousBuffer"> </a>
+                            <div class="element clickable property public property_continuousBuffer" data-toggle="collapse" data-target=".property_continuousBuffer .collapse">
+                                <h2>Continuous Buffer status</h2>
+                                <pre>continuousBuffer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_padding"> </a>
+                            <div class="element clickable property public property_padding" data-toggle="collapse" data-target=".property_padding .collapse">
+                                <h2>Padding status</h2>
+                                <pre>padding</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_changed"> </a>
+                            <div class="element clickable property public property_changed" data-toggle="collapse" data-target=".property_changed .collapse">
+                                <h2>Does the key schedule need to be (re)calculated?</h2>
+                                <pre>changed</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_explicit_key_length"> </a>
+                            <div class="element clickable property public property_explicit_key_length" data-toggle="collapse" data-target=".property_explicit_key_length .collapse">
+                                <h2>Has the key length explicitly been set or should it be derived from the key, itself?</h2>
+                                <pre>explicit_key_length</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_w"> </a>
+                            <div class="element clickable property public property_w" data-toggle="collapse" data-target=".property_w .collapse">
+                                <h2>The Key Schedule</h2>
+                                <pre>w</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dw"> </a>
+                            <div class="element clickable property public property_dw" data-toggle="collapse" data-target=".property_dw .collapse">
+                                <h2>The Inverse Key Schedule</h2>
+                                <pre>dw</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_c"> </a>
+                            <div class="element clickable property public property_c" data-toggle="collapse" data-target=".property_c .collapse">
+                                <h2>Shift offsets</h2>
+                                <pre>c</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_t0"> </a>
+                            <div class="element clickable property public property_t0" data-toggle="collapse" data-target=".property_t0 .collapse">
+                                <h2>Precomputed mixColumns table</h2>
+                                <pre>t0</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_t1"> </a>
+                            <div class="element clickable property public property_t1" data-toggle="collapse" data-target=".property_t1 .collapse">
+                                <h2>Precomputed mixColumns table</h2>
+                                <pre>t1</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_t2"> </a>
+                            <div class="element clickable property public property_t2" data-toggle="collapse" data-target=".property_t2 .collapse">
+                                <h2>Precomputed mixColumns table</h2>
+                                <pre>t2</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_t3"> </a>
+                            <div class="element clickable property public property_t3" data-toggle="collapse" data-target=".property_t3 .collapse">
+                                <h2>Precomputed mixColumns table</h2>
+                                <pre>t3</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dt0"> </a>
+                            <div class="element clickable property public property_dt0" data-toggle="collapse" data-target=".property_dt0 .collapse">
+                                <h2>Precomputed invMixColumns table</h2>
+                                <pre>dt0</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dt1"> </a>
+                            <div class="element clickable property public property_dt1" data-toggle="collapse" data-target=".property_dt1 .collapse">
+                                <h2>Precomputed invMixColumns table</h2>
+                                <pre>dt1</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dt2"> </a>
+                            <div class="element clickable property public property_dt2" data-toggle="collapse" data-target=".property_dt2 .collapse">
+                                <h2>Precomputed invMixColumns table</h2>
+                                <pre>dt2</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_dt3"> </a>
+                            <div class="element clickable property public property_dt3" data-toggle="collapse" data-target=".property_dt3 .collapse">
+                                <h2>Precomputed invMixColumns table</h2>
+                                <pre>dt3</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_paddable"> </a>
+                            <div class="element clickable property public property_paddable" data-toggle="collapse" data-target=".property_paddable .collapse">
+                                <h2>Is the mode one that is paddable?</h2>
+                                <pre>paddable</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_enbuffer"> </a>
+                            <div class="element clickable property public property_enbuffer" data-toggle="collapse" data-target=".property_enbuffer .collapse">
+                                <h2>Encryption buffer for CTR, OFB and CFB modes</h2>
+                                <pre>enbuffer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_debuffer"> </a>
+                            <div class="element clickable property public property_debuffer" data-toggle="collapse" data-target=".property_debuffer .collapse">
+                                <h2>Decryption buffer for CTR, OFB and CFB modes</h2>
+                                <pre>debuffer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Crypt_Rijndael"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/default.html">\</a>
+    </li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Crypt_Rijndael.html">Crypt_Rijndael</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer class="span12">
+    Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+    <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+    generated on Wed, 12 Jun 2013 15:09:59 +0000.<br/>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \Crypt_Hash
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="../js/template.js" type="text/javascript"></script>
+    <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="../img/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span> </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                                                </ul>
+                    </li>
+                    <li class="dropdown" id="charts-menu">
+                        <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graph_class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../errors.html"><i class="icon-list-alt"></i>&#160;Errors</a></li>
+                            <li><a href="../markers.html"><i class="icon-list-alt"></i>&#160;Markers</a></li>
+                            <li><a href="../deprecated.html"><i class="icon-list-alt"></i>&#160;Deprecated</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="go_to_top">
+        <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+    </div>
+</div>
+
+<div id="___" class="container">
+    <noscript>
+        <div class="alert alert-warning">
+            Javascript is disabled; several features are only available if Javascript is enabled.
+        </div>
+    </noscript>
+
+        
+    <div class="row">
+        <div class="span4">
+            <span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-custom icon-method"></i> Methods
+                    <ul>
+                                                                                <li class="method public">
+                                <a href="#method_Crypt_Hash" title="Crypt_Hash :: Default Constructor.">
+                                    <span class="description">Default Constructor.</span><pre>Crypt_Hash</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_setKey" title="setKey :: Sets the key for HMACs">
+                                    <span class="description">Sets the key for HMACs</span><pre>setKey</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_setHash" title="setHash :: Sets the hash function.">
+                                    <span class="description">Sets the hash function.</span><pre>setHash</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_hash" title="hash :: Compute the HMAC.">
+                                    <span class="description">Compute the HMAC.</span><pre>hash</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method_getLength" title="getLength :: Returns the hash length (in bytes)">
+                                    <span class="description">Returns the hash length (in bytes)</span><pre>getLength</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__md5" title="_md5 :: Wrapper for MD5">
+                                    <span class="description">Wrapper for MD5</span><pre>_md5</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__sha1" title="_sha1 :: Wrapper for SHA1">
+                                    <span class="description">Wrapper for SHA1</span><pre>_sha1</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__md2" title="_md2 :: Pure-PHP implementation of MD2">
+                                    <span class="description">Pure-PHP implementation of MD2</span><pre>_md2</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__sha256" title="_sha256 :: Pure-PHP implementation of SHA256">
+                                    <span class="description">Pure-PHP implementation of SHA256</span><pre>_sha256</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__sha512" title="_sha512 :: Pure-PHP implementation of SHA384 and SHA512">
+                                    <span class="description">Pure-PHP implementation of SHA384 and SHA512</span><pre>_sha512</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__rightRotate" title="_rightRotate :: Right Rotate">
+                                    <span class="description">Right Rotate</span><pre>_rightRotate</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__rightShift" title="_rightShift :: Right Shift">
+                                    <span class="description">Right Shift</span><pre>_rightShift</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__not" title="_not :: Not">
+                                    <span class="description">Not</span><pre>_not</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__add" title="_add :: Add">
+                                    <span class="description">Add</span><pre>_add</pre>
+                                </a>
+                            </li>
+                                                                                                            <li class="method public">
+                                <a href="#method__string_shift" title="_string_shift :: String Shift">
+                                    <span class="description">String Shift</span><pre>_string_shift</pre>
+                                </a>
+                            </li>
+                                                                        </ul>
+                </li>
+                <li class="nav-header protected">» Protected
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                </li>
+                <li class="nav-header private">» Private
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                </li>
+                <li class="nav-header">
+                    <i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+                                            </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Crypt_Hash</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Pure-PHP implementations of keyed-hash message authentication codes (HMACs) and various cryptographic hashing functions.</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>Jim Wigginton &lt;terrafrost@php.net&gt;</td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        version
+                                                                            </th>
+                                    <td></td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        access
+                                                                            </th>
+                                    <td>public</td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>Crypt_Hash</td>
+                                </tr>
+                                                                                                                            </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                            <a id="method_Crypt_Hash"></a>
+                        <div class="element clickable method public method_Crypt_Hash" data-toggle="collapse" data-target=".method_Crypt_Hash .collapse">
+                            <h2>Default Constructor.</h2>
+                            <pre>Crypt_Hash($hash = &#039;sha1&#039;) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$hash</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setKey"></a>
+                        <div class="element clickable method public method_setKey" data-toggle="collapse" data-target=".method_setKey .collapse">
+                            <h2>Sets the key for HMACs</h2>
+                            <pre>setKey(String $key = false) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Keys can be of any length.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$key</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setHash"></a>
+                        <div class="element clickable method public method_setHash" data-toggle="collapse" data-target=".method_setHash .collapse">
+                            <h2>Sets the hash function.</h2>
+                            <pre>setHash(String $hash) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$hash</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_hash"></a>
+                        <div class="element clickable method public method_hash" data-toggle="collapse" data-target=".method_hash .collapse">
+                            <h2>Compute the HMAC.</h2>
+                            <pre>hash(String $text) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$text</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getLength"></a>
+                        <div class="element clickable method public method_getLength" data-toggle="collapse" data-target=".method_getLength .collapse">
+                            <h2>Returns the hash length (in bytes)</h2>
+                            <pre>getLength() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>public</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__md5"></a>
+                        <div class="element clickable method public method__md5" data-toggle="collapse" data-target=".method__md5 .collapse">
+                            <h2>Wrapper for MD5</h2>
+                            <pre>_md5($m) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$m</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__sha1"></a>
+                        <div class="element clickable method public method__sha1" data-toggle="collapse" data-target=".method__sha1 .collapse">
+                            <h2>Wrapper for SHA1</h2>
+                            <pre>_sha1($m) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$m</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__md2"></a>
+                        <div class="element clickable method public method__md2" data-toggle="collapse" data-target=".method__md2 .collapse">
+                            <h2>Pure-PHP implementation of MD2</h2>
+                            <pre>_md2($m) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>See {@link http://tools.ietf.org/html/rfc1319 RFC1319}.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$m</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__sha256"></a>
+                        <div class="element clickable method public method__sha256" data-toggle="collapse" data-target=".method__sha256 .collapse">
+                            <h2>Pure-PHP implementation of SHA256</h2>
+                            <pre>_sha256($m) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>See {@link http://en.wikipedia.org/wiki/SHA_hash_functions#SHA-256_.28a_SHA-2_variant.29_pseudocode SHA-256 (a SHA-2 variant) pseudocode - Wikipedia}.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$m</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__sha512"></a>
+                        <div class="element clickable method public method__sha512" data-toggle="collapse" data-target=".method__sha512 .collapse">
+                            <h2>Pure-PHP implementation of SHA384 and SHA512</h2>
+                            <pre>_sha512($m) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$m</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__rightRotate"></a>
+                        <div class="element clickable method public method__rightRotate" data-toggle="collapse" data-target=".method__rightRotate .collapse">
+                            <h2>Right Rotate</h2>
+                            <pre>_rightRotate(Integer $int, Integer $amt) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$int</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$amt</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__rightShift"></a>
+                        <div class="element clickable method public method__rightShift" data-toggle="collapse" data-target=".method__rightShift .collapse">
+                            <h2>Right Shift</h2>
+                            <pre>_rightShift(Integer $int, Integer $amt) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$int</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$amt</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__not"></a>
+                        <div class="element clickable method public method__not" data-toggle="collapse" data-target=".method__not .collapse">
+                            <h2>Not</h2>
+                            <pre>_not(Integer $int) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description">
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$int</h4>
+                                                <code>Integer</code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__add"></a>
+                        <div class="element clickable method public method__add" data-toggle="collapse" data-target=".method__add .collapse">
+                            <h2>Add</h2>
+                            <pre>_add() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>_sha256() adds multiple unsigned 32-bit integers.  Since PHP doesn't support unsigned integers and since the
+possibility of overflow exists, care has to be taken.  Math_BigInteger() could be used but this should be faster.</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    see
+                                                </th>
+                                                <td>
+                                                                                                            
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method__string_shift"></a>
+                        <div class="element clickable method public method__string_shift" data-toggle="collapse" data-target=".method__string_shift .collapse">
+                            <h2>String Shift</h2>
+                            <pre>_string_shift(String $string, $index = 1) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Inspired by array_shift</p>
+</div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                            <p>private</p>
+<br />
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$string</h4>
+                                                <code>String</code><p>
+</p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$index</h4>
+                                                <code></code><p>
+</p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                            <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_b"> </a>
+                            <div class="element clickable property public property_b" data-toggle="collapse" data-target=".property_b .collapse">
+                                <h2>Byte-length of compression blocks / key (Internal HMAC)</h2>
+                                <pre>b</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_l"> </a>
+                            <div class="element clickable property public property_l" data-toggle="collapse" data-target=".property_l .collapse">
+                                <h2>Byte-length of hash output (Internal HMAC)</h2>
+                                <pre>l</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_hash"> </a>
+                            <div class="element clickable property public property_hash" data-toggle="collapse" data-target=".property_hash .collapse">
+                                <h2>Hash Algorithm</h2>
+                                <pre>hash</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_key"> </a>
+                            <div class="element clickable property public property_key" data-toggle="collapse" data-target=".property_key .collapse">
+                                <h2>Key</h2>
+                                <pre>key</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_opad"> </a>
+                            <div class="element clickable property public property_opad" data-toggle="collapse" data-target=".property_opad .collapse">
+                                <h2>Outer XOR (Internal HMAC)</h2>
+                                <pre>opad</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="property_ipad"> </a>
+                            <div class="element clickable property public property_ipad" data-toggle="collapse" data-target=".property_ipad .collapse">
+                                <h2>Inner XOR (Internal HMAC)</h2>
+                                <pre>ipad</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Crypt_Hash"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li>
+        <span class="divider">\</span><a href="../namespaces/default.html">\</a>
+    </li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Crypt_Hash.html">Crypt_Hash</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer class="span12">
+    Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+    <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+    generated on Wed, 12 Jun 2013 15:09:58 +0000.<br/>
+</footer>
+</body>
+</html>

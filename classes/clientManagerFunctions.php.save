@@ -1,0 +1,183 @@
+<?php
+
+
+require_once('clientManagerRegistration.php');
+
+class ClientManagerFunctions extends ClientManagerRegistration {
+
+
+	private 	$db_connection						= null;
+
+	private 	intval($get_user_id)				= "";						   // $_GET the user's ID number
+	private 	$get_user_name						= "";						   // $_GET the user's name
+
+
+	/**
+     * the function "__construct()" automatically starts whenever an object of this class is created,
+     * you know, when you do "$login = new Login();"
+     */  
+	public function __construct(){
+
+		if(isset($_GET['action']) && $_GET['action'] == 'delete') {
+			
+			$this->deleteUser();
+			
+		} elseif(isset($_GET['action']) && $_GET['action'] == 'makeAdmin') {
+
+  			$this->makeAdmin();
+
+  		} elseif(isset($_GET['action']) && $_GET['action'] == 'suspend') {
+
+  			$this->suspendUser();
+
+  		} elseif(isset($_GET['action']) && $_GET['action'] == 'unsuspend') {
+
+  			$this->unsuspendUser();
+
+  		}
+	
+	}
+
+
+
+	public function deleteUser() {
+
+		$this->db_connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+		if (!$this->db_connection->connect_errno) {
+
+			// escapin' this
+		    $this->get_user_id     = $this->db_connection->real_escape_string($_GET['user_id']);
+		    $this->get_user_name   = $this->db_connection->real_escape_string($_GET['user_name']);
+
+		    $query_check_user = $this->db_connection->query("SELECT * FROM cw_users WHERE user_id = '".$this->get_user_id."' AND user_name = '".$this->get_user_name."' ");
+
+		    if ($query_check_user->num_rows != 1) {
+
+			 	 $this->errors[] = "This user doesnt exist or deleted, please chose another user to delete.";
+			
+			} else {
+
+				$query_delete_user = $this->db_connection->query("DELETE FROM cw_users WHERE user_id = '".$this->get_user_id."'");
+
+				$ssh = new Net_SSH2('localhost');
+				if(!$ssh->login('root', '123123')) {
+
+                     $this->errors[] = "Sorry, no SSH Connection, or badly configured";
+
+                    }
+
+				$ssh->exec("userdel $this->get_user_name");
+
+			    if($query_delete_user) {
+
+			    $this->messages[] = "The Desired user has beend deleted successfully";
+
+			    } else {
+
+			    	$this->errors[] = "Failed to delete the Desired user, please try again.";
+			    }
+			}
+			
+		}
+
+	}
+
+	public function makeAdmin() {
+
+		$this->db_connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+		if (!$this->db_connection->connect_errno) {
+
+			// escapin' this
+		    $this->get_user_id     = $this->db_connection->real_escape_string($_GET['user_id']);
+		    $this->get_user_name   = $this->db_connection->real_escape_string($_GET['user_name']);
+
+				$query_makeAdmin_user = $this->db_connection->query("UPDATE cw_users SET user_level = '5' WHERE user_id = '".$this->get_user_id."' ");
+
+			    if($query_makeAdmin_user) {
+
+			    $this->messages[] = "The desired user now has admin priviledges.";
+
+			    } else {
+
+			    	$this->errors[] = "Failed to set Admin priviledges, please try again.".
+			    }
+			}
+			
+		}
+
+
+	public function suspendUser() {
+
+		$this->db_connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+		if (!$this->db_connection->connect_errno) {
+
+			// escapin' this
+		    $this->get_user_id     = $this->db_connection->real_escape_string($_GET['user_id']);
+		    $this->get_user_name   = $this->db_connection->real_escape_string($_GET['user_name']);
+
+
+			$query_suspend_user = $this->db_connection->query("UPDATE cw_users SET user_status = 'suspended' WHERE user_id = '".$this->get_user_id."' ");
+
+				    if($query_suspend_user) {
+
+					  $ssh = new Net_SSH2('localhost');
+					  if(!$ssh->login('root', '123123')) {
+
+	                    	$this->errors[] = "Sorry, no SSH Connection, or badly configured";
+
+                    	}
+
+						$ssh->exec("usermod -L $this->get_user_name");
+
+				    $this->messages[] = "The desired user has been suspended and locked successfully.";
+
+			    } else {
+
+			    	$this->errors[] = "Failed to suspend the Desired user, please try again.";
+			    }
+			}
+			
+		}
+
+
+	public function unsuspendUser() {
+
+		$this->db_connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+		if (!$this->db_connection->connect_errno) {
+
+			// escapin' this
+		    $this->get_user_id     	= $this->db_connection->real_escape_string($_GET['user_id']);
+		    $this->get_user_name    = $this->db_connection->real_escape_string($_GET['user_name']);
+
+		    $query_unsuspend_user = $this->db_connection->query("UPDATE cw_users SET user_status = 'live' WHERE user_id = '".$this->get_user_id."' ");
+
+		      if($query_unsuspend_user) {
+
+		      	$ssh = new Net_SSH2('localhost');
+				if(!$ssh->login('root', '123123')) {
+
+	               $this->errors[] = "Sorry, no SSH Connection, or badly configured";
+
+                    }
+
+				$ssh->exec("usermod -U $this->get_user_name");
+
+		    	$this->messages[] = "The Desired user has been Unsuspended successfully";
+
+		    } else {
+
+		    	$this->errors[] = "Failed to unsuspend the $this->user_name user, please try again";
+		    }
+			
+		}
+
+	}
+
+}
+
+
+
+?>
