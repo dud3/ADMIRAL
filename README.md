@@ -1,6 +1,9 @@
 Admiral
 =======
 
+***Logo:*** Inline-style: 
+![alt text](https://github.com/dud3/ADMIRAL/blob/master/ico/icomain.png "Logo Title Text 1")
+
 Web-Based Development Enviroment, build on top of bootstrap
 
 Features
