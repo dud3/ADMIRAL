@@ -1,4 +1,4 @@
-Admiral                           ![alt text](https://raw.github.com/dud3/ADMIRAL/master/ico/icomain.png "Logo Title Text 1")
+Admiral 
 =======
 
 Web-Based Development Enviroment, build on top of bootstrap
