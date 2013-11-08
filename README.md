@@ -29,3 +29,7 @@ Samples
 <br />
 ##### 5.) Client Manager #2
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/5.png "Client Manager #2")
+
+Video Sample
+------------
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=u9i_Yrv1ga4)
