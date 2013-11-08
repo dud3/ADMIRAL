@@ -11,3 +11,6 @@ Features
 - Client and Administrator page
 - The same user is created in MySQL database and Linux server
 - Client manager, administrators can manage clients
+
+Samples
+-------
