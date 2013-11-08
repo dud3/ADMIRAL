@@ -15,21 +15,21 @@ Features
 Samples
 -------
 
-##### 1) Login:
+##### 1). Login:
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/1.png "Login")
 
 
-##### Registration:
+##### 2). Registration:
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/2.png "Register")
 
 
-##### My Admiral:
+##### 3). My Admiral:
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/3.png "My Admiral")
 
 
-##### Client Manager:
+##### 4). Client Manager:
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/4.png "Client Manager")
 
 
-##### Client Manager #2:
+##### 5.) Client Manager #2:
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/5.png "Client Manager #2")
