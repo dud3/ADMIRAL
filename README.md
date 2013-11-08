@@ -17,19 +17,15 @@ Samples
 
 ##### 1). Login
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/1.png "Login")
-
-
+<br />
 ##### 2). Registration
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/2.png "Register")
-
-
+<br />
 ##### 3). My Admiral
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/3.png "My Admiral")
-
-
+<br />
 ##### 4). Client Manager
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/4.png "Client Manager")
-
-
+<br />
 ##### 5.) Client Manager #2
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/5.png "Client Manager #2")
