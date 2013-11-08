@@ -1,6 +1,5 @@
-Admiral
+Admiral ![alt text](https://raw.github.com/dud3/ADMIRAL/master/ico/icomain.png "Logo Title Text 1")
 =======
-![alt text](https://raw.github.com/dud3/ADMIRAL/master/ico/icomain.png "Logo Title Text 1")
 
 Web-Based Development Enviroment, build on top of bootstrap
 
@@ -16,17 +15,17 @@ Features
 Samples
 -------
 
-- ScreenShoot 1
+#####ScreenShoot 1
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/1.png)
 
-- ScreenShoot 2
+#####ScreenShoot 2
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/2.png)
 
-- ScreenShoot 3
+#####ScreenShoot 3
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/3.png)
 
-- ScreenShoot 4
+#####ScreenShoot 4
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/4.png)
 
-- ScreenShoot 5
+#####ScreenShoot 5
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/5.png)
