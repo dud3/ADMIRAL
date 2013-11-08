@@ -15,7 +15,7 @@ Features
 Samples
 -------
 
-##### Login:
+##### 1) Login:
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/1.png "Login")
 
 
