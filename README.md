@@ -15,4 +15,4 @@ Features
 Samples
 -------
 
-![ScreenShot](https://raw.github.com/dud3/ADMIRAL/blob/master/screenshots/1.png)
+![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/1.png)
