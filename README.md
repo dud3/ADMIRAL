@@ -15,4 +15,4 @@ Features
 Samples
 -------
 
-![Alt text](https://raw.github.com/dud3/ADMIRAL/blob/master/screenshots/1.png "Optional title")
+![ScreenShot](https://github.com/dud3/ADMIRAL/blob/master/screenshots/1.png)
