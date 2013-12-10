@@ -53,7 +53,7 @@ require_once("../classes/clientManagerFunctions.php");
 <script type="text/javascript" src="../js/scrolltopcontrol.js">
 
 /***********************************************
-* Scroll To Top Control script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Scroll To Top Control script- ï¿½ Dynamic Drive DHTML code library (www.dynamicdrive.com)
 * This notice MUST stay intact for legal use
 * Visit Project Page at http://www.dynamicdrive.com for full source code
 ***********************************************/
@@ -297,40 +297,26 @@ require_once("../classes/clientManagerFunctions.php");
         while($row = mysql_fetch_array($result)) {
 
                echo '<tr>';
-
                echo '<td>'.$row['user_id'].'</td>';
-
                echo '<td>'.$row['user_name'].'</td>';
-
                echo '<td>'.$row['user_email'].'</td>';
-
                echo '<td>'.util::safe_truncate($row['user_password_hash'], 24).'</td>';
-
                echo '<td>'.$row['user_member_since'].'</td>';
-
                echo '<td>'.$row['user_level'].'</td>';
-
                echo '<td><a class="btn btn-danger" href="?action=delete&user_id='.$row['user_id'].'&user_name='.$row['user_name'].'"><b class="icon-trash"></b></a></td>';
-              
                echo '<td>';
-
                echo '<div class="btn-group">';
-
                echo '<button class="btn">other</button>';
-
                echo '<button class="btn dropdown-toggle" data-toggle="dropdown">';
-
                echo '<span class="caret"></span>';
-
                echo '</button>';
-
                echo '<ul class="dropdown-menu">';
 
             if($row['user_status'] == 'live') {
 	            if($row['user_level'] != '5') {
-
                     echo '<li><a href="?action=makeAdmin&user_id='.$row['user_id'].'&user_name='.$row['user_name'].'"><b class="icon-legal text-info"></b> Make Admin</a></li>';
-	             }
+	            }
+          
                     echo '<li><a href="?action=suspend&user_id='.$row['user_id'].'&user_name='.$row['user_name'].'"><b class="icon-minus-sign text-error"></b> Suspend</a></li>';
                  
 		      } elseif($row['user_status'] == 'suspended') {   
