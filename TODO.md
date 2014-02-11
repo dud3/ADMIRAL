@@ -1,5 +1,5 @@
 # Todo List
 
-- [ ] Task one
+- [] Task one
 - [ ] Task two
 - [ ] Completed Task
