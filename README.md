@@ -30,6 +30,10 @@ Samples
 ##### 5.) Client Manager #2
 ![ScreenShot](https://raw.github.com/dud3/ADMIRAL/master/screenshots/5.png "Client Manager #2")
 
+## Software Documentation
+
+Click for: [Software Documentation](https://www.dropbox.com/s/428plvqz5pgsthf/Project-Long-Documentation.pdf)
+
 Video Sample
 ------------
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=u9i_Yrv1ga4
