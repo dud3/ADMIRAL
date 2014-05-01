@@ -108,7 +108,7 @@ require_once("../classes/Login.php");
            </script>
                   <ul class="nav nav-tabs nav-stacked">
                    <li class="nav-header">Admiral header</li>
-                   <li <?php highlightLink("index.php"); ?>><a href=<?php hideSameLink("index.php");?> class="text-error"> <b class="icon-home"></b>Home(<i>System Info</i>)</a></li>
+                   <li class="active" disabled><a class="text-error" disabled><b class="icon-home"></b>Home(<i>System Info</i>)</a></li>
                    <li <?php highlightLink("myAdmiral.php"); ?>> <a href=<?php hideSameLink("myAdmiral.php"); ?>><b class="icon-beaker"></b>My Admiral</a></li>
                    <li ><a href="<?php echo $workSpace; ?>" target="_blank"><b class=" icon-wrench"></b>Workspace</a></li>
                    <li <?php highlightLink("faq.php"); ?>><a href=<?php hideSameLink("faq.php"); ?>><b class="icon-h-sign"></b>Ask(FAQ)</a></li>

@@ -3,7 +3,7 @@ define('INCLUDE_CHECK',true);
 
 require_once("../classes/util.php");
 
-  $sshClient = "https://".$_SERVER['SERVER_ADDR'].":8080";
+  $sshClient = "https://".$_SERVER['REMOTE_HOST'];
   $workSpace = "/".$_SESSION['user_name'];
 
 ?>
@@ -83,7 +83,7 @@ require_once("../classes/util.php");
               
                 <div class="page-header">
                 <div class="row-fluid">
-                  <a href="<?php echo $sshClient; ?>" target="_blank" class="web" rel="popover" data-content="SSH Client" rel="popover" data-original-title="Use our Web-based <b class='text-info'>CLI-T</b>(Command Line - Terminal) or known as shell , for mnipulating and managing files folder (including config files) and also other utilities. Twice <b class='text-info'>Enter</b> Then your <b class='text-info'>username</b> and <b class='text-info'>passowrd</b>.">
+                  <a href="https://46.149.18.88" target="_blank" class="web" rel="popover" data-content="SSH Client" rel="popover" data-original-title="Use our Web-based <b class='text-info'>CLI-T</b>(Command Line - Terminal) or known as shell , for mnipulating and managing files folder (including config files) and also other utilities. Twice <b class='text-info'>Enter</b> Then your <b class='text-info'>username</b> and <b class='text-info'>passowrd</b>.">
                     <img src="../img/SSH.png" />
                   </a>
                   <button class="btn btn-primary btn-large pull-right" class="mobile" data-toggle="button" data-placement="bottom" data-content="Popwith option tigger" rel="popover" data-original-title="Use our Web-based CLI-T(Command Line - Terminal) or known as shell , for mnipulating and managing files folder (including config files) and also other utilities. Twice Enter Then your username' and passowrd.">On mobile (info)</button>

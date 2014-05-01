@@ -60,13 +60,13 @@ class ClientManagerFunctions extends ClientManagerRegistration {
 			    if($query_delete_user) {
 
 			    	$ssh = new Net_SSH2('localhost');
-					if(!$ssh->login('root', '123123')) {
+					if(!$ssh->login('ubuntu', '123123123')) {
 
                      $this->errors[] = "Sorry, no SSH Connection, or badly configured";
 
                     }
 
-					$ssh->exec("userdel $this->get_user_name");
+					$ssh->exec("sudo userdel $this->get_user_name");
 
 					$this->db_connection->query("DROP USER $this->get_user_name@localhost");
 
@@ -140,13 +140,13 @@ class ClientManagerFunctions extends ClientManagerRegistration {
 			    if($query_suspend_user) {
 
 			    	$ssh = new Net_SSH2('localhost');
-					if(!$ssh->login('root', '123123')) {
+					if(!$ssh->login('ubuntu', '123123123')) {
 
 	                    $this->errors[] = "Sorry, no SSH Connection, or badly configured";
 
                     	}
 
-						$ssh->exec("usermod -L $this->get_user_name");
+						$ssh->exec("sudo usermod -L $this->get_user_name");
 
 					    $this->messages[] = "The user [$this->get_user_name] has been suspended and locked successfully.";
 
@@ -183,13 +183,13 @@ class ClientManagerFunctions extends ClientManagerRegistration {
 			    if($query_unsuspend_user) {
 
 			    	$ssh = new Net_SSH2('localhost');
-					if(!$ssh->login('root', '123123')) {
+					if(!$ssh->login('ubuntu', '123123123')) {
 
 	               		$this->errors[] = "Sorry, no SSH Connection, or badly configured";
 
                     }
 
-					$ssh->exec("usermod -U $this->get_user_name");
+					$ssh->exec("sudo usermod -U $this->get_user_name");
 
 			    	$this->messages[] = "The user [$this->get_user_name] has been Unsuspended successfully.";
 

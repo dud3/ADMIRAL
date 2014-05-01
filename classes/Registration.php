@@ -157,13 +157,13 @@ class Registration {
 
                     // create a new SSH object to the local machine
                     $ssh = new Net_SSH2('localhost');
-                    if(!$ssh->login('root', '123123')) {
+                    if(!$ssh->login('ubuntu', '123123123')) {
 
                         $this->errors[] = "Sorry, no SSH Connection, or badly configured";
 
                     }
                          // Linux single line shell command to add the user on the linux server side /etc/passwd ...
-                        $ssh->exec("useradd -g users -d /var/www/$this->user_name -s /bin/bash -p $(echo $this->user_password | openssl passwd -1 -stdin) $this->user_name -m");
+                        $ssh->exec("sudo useradd -g users -d /var/www/$this->user_name -s /bin/bash -p $(echo $this->user_password | openssl passwd -1 -stdin) $this->user_name -m");
 
                         if ($query_new_user_insert) {
 

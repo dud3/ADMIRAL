@@ -8,26 +8,23 @@
  * If you want to know why we use "define" instead of "const" @see http://stackoverflow.com/questions/2447791/define-vs-const
  */
 
-
 /** +----------------------SSH Configuration-----------------------+ */
-	/** I difened SSH configuration just to be able to make the
-				difference between database and SSH */
+/** I difened SSH configuration just to be able to make the difference between database and SSH */
 
 // SSH host, which usually must be localhost, since the application is located at the same machine
 define("SSH_HOST", "localhost");
 
 // super priviledged user root, superman of the users :D 
-define("SSH_USER", "root");
+define("SSH_USER", "ubuntu");
 
 // root password 
-define("SSH_PASS", "123123");
+define("SSH_PASS", "123123123");
 
 // define SSH port 
 define("SSH_PORT", "22");
 
 // define gateone web-ssh port
 define("GATEONE_PORT", "8080");
-
 
 /** +----------------------File upload limitation Configuration-----------------------+ */
 

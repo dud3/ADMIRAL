@@ -15,9 +15,9 @@
 	$sTable = "cw_users";
 	
 	/* Database connection information */
-	$gaSql['user']       = "root";
-	$gaSql['password']   = "123123";
-	$gaSql['db']         = "cw_users";
+	$gaSql['user']       = "admiral";
+	$gaSql['password']   = "WG5YAzAFbwaUBw9E";
+	$gaSql['db']         = "admiral_db";
 	$gaSql['server']     = "localhost";
 	
 	/* REMOVE THIS LINE (it just includes my SQL connection user/pass) */

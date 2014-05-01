@@ -131,7 +131,6 @@ INSERT INTO `cw_users` (`user_id`, `user_first_name`, `user_last_name`, `user_em
 (300, 'admin', 'me', 'admin@gmail.com', 'admin2', '$2a$10$wZLlyp0scYoVHNxpv.dmsO1D2PapCPAxzzlfiWZLwWIOl783WoYvu', '', 'never', '5', NULL, 'live', '../admin2', '2013-06-02 13:44:40'),
 (306, 'test', 'test2222', 'testt@gmail.com', 'testt', '$2a$10$AKaiOQHU9yrvB6hIBjBwKOtxNW/WrFlb6ogoIAI/Jvr46TIbL7KeG', '', '03/06/13 18:09:45', '1', NULL, 'live', '../testt', '2013-06-03 18:09:18'),
 (303, 'test', 'tesdt2', 'hey@gm22ail.com', 'tesdt222', '$2a$10$n2rfIN9V2ZLgQYxc9A7Rh.uV743xomuQ4Eolx4eHC5dxGhkJF2CPm', '', 'never', '1', NULL, 'live', '../tesdt222', '2013-06-03 12:54:47'),
-(341, 'elin', 'Jonsdottir', 'elin2@gmail.com', 'elin2', '$2a$10$EBY6LA.eHC6mR8/ERmOPFO4CGSE0/nyxRA/qHTtcFn8eAEcq/Lbq.', '', 'never', '1', NULL, 'live', '../elin2', '2013-06-09 20:31:32'),
 (305, 'test', 'test2222', 'testaere@famsdas.com', 'test2323123', '$2a$10$jYpka0RjIXXUzGhtYmd7xOow8ypMe6zBInHxCnDuESJVP7BGRku7O', '', 'never', '1', NULL, 'live', '../test2323123', '2013-06-03 15:31:25'),
 (308, 'testmore', 'testmore', 'tewwwst@gmail.com', 'tesdt', '$2a$10$VMc9wF/DLqLmlat5DJ4MZORgiOXC68AkRpA20MKC5x5nAjDT3pIsC', '', 'never', '1', NULL, 'live', '../tesdt', '2013-06-04 12:29:45'),
 (309, 'test', 'test', 'testdudetest@gmail.com', 'testdudetest', '$2a$10$Pmp9xjAkqMAwSaC3xXHuP./77tDqMnVYbks6zmIkyiXnNevb0EoaC', '', 'never', '1', NULL, 'live', '../testdudetest', '2013-06-04 12:51:04'),

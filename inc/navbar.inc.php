@@ -9,7 +9,8 @@ require_once("../conf/conf.php");
 
   $login = new Login();            
   $hostIp = $_SERVER['REMOTE_ADDR'];
-  $sshClient = "https://".$_SERVER['SERVER_ADDR'].":8080";
+  $sshClient = "https://46.149.18.88";
+  // $sshClient = "https://".$_SERVER['SERVER_ADDR'].":8080";
   $currentUser = $_SESSION['user_name'];
   $user_last_loggedin = $_SESSION['user_last_loggedin'];
   // $redirect = simple_encrypt(util::get_current_url());

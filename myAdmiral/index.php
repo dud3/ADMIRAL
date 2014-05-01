@@ -113,6 +113,7 @@ define('INCLUDE_CHECK',true);
                data-bootstro-width="250px" 
                data-bootstro-placement='left' data-bootstro-step='3'>
             <div class="row-fluid">
+		<?php //require_once("index2.php"); ?>
                   <h6>Extra container:</h6> 
                   <p><a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip on top"> here </a>
                     &nbsp;Nullam <abbr title="attribute">attr quis risus</abbr> eget urna mollis ornare vel eu leo. Cum

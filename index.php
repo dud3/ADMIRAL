@@ -32,7 +32,7 @@ define('INCLUDE_CHECK',true);
 
       } else {
 
-      $camefrom = "myAdmiral/";
+      $camefrom = "myAdmiral/myAdmiral.php";
 
     }
 
